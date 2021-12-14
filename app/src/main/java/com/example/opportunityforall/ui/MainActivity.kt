@@ -1,4 +1,4 @@
-package com.example.opportunityforall
+package com.example.opportunityforall.ui
 
 import android.os.Bundle
 import android.view.View
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.opportunityforall.adapters.ViewPageAdapter
 import com.example.opportunityforall.databinding.ActivityMainBinding
+import com.example.opportunityforall.startActivity
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {

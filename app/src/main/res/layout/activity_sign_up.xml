@@ -84,6 +84,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/community"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_marginStart="24dp"
@@ -115,6 +116,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_marginStart="24dp"
@@ -125,6 +127,7 @@
         android:textColor="#333333"
         android:fontFamily="@font/proxima_nova_bold"
         android:text="@string/next"
+        android:enabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

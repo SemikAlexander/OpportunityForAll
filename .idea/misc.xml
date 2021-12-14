@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/rounding_choise_active.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable/rounding_choise_default.xml" value="0.2296875" />
         <entry key="app/src/main/res/drawable/rounding_edit_text.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/rounding_login.xml" value="0.1648148148148148" />

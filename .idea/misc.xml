@@ -8,11 +8,13 @@
         <entry key="app/src/main/res/drawable/rounding_login.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/rounding_next.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/rounding_skip.xml" value="0.11927083333333334" />
+        <entry key="app/src/main/res/drawable/roundung_default_tab.xml" value="0.25277777777777777" />
+        <entry key="app/src/main/res/drawable/roundung_tab.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable/tab_indicator_default.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/tab_indicator_selected.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1648148148148148" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17744058539514707" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.26569829982028087" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35837245696400627" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22512562814070353" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.12817028985507245" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.13166111989711266" />

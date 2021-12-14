@@ -3,7 +3,11 @@ package com.example.opportunityforall.ui
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.getDrawable
 import androidx.viewpager2.widget.ViewPager2
+import com.example.opportunityforall.R
+import com.example.opportunityforall.R.drawable.*
 import com.example.opportunityforall.adapters.ViewPageAdapter
 import com.example.opportunityforall.databinding.ActivityMainBinding
 import com.example.opportunityforall.startActivity
@@ -31,27 +35,21 @@ class MainActivity : AppCompatActivity() {
                 startActivity<LoginActivity>()
             }
 
-            TabLayoutMediator(tabDots, viewPager, TabLayoutMediator.TabConfigurationStrategy { tab, position ->
-
-            }).attach()
-
             nextButton.setOnClickListener {
-                if (viewPager.currentItem != 1)
+                if (viewPager.currentItem != 1) {
                     viewPager.currentItem = ++viewPager.currentItem
+                    view2.background = getDrawable(this@MainActivity, roundung_active_tab)
+                }
                 else {
                     nextButton.visibility = View.INVISIBLE
                     skipButton.visibility = View.INVISIBLE
                     getStartedButton.visibility = View.VISIBLE
+
                     viewPager.currentItem = ++viewPager.currentItem
+
+                    view3.background = getDrawable(this@MainActivity, roundung_active_tab)
                 }
             }
-
-            viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-
-                }
-            })
         }
     }
 }

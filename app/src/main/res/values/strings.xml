@@ -17,4 +17,5 @@
     <string name="validate">We need a link to your profile page on your university\'s official athletic department website so we can validate that you\'re on the team.</string>
     <string name="name">Name</string>
     <string name="e_mail">E-mail</string>
+    <string name="about">About</string>
 </resources>

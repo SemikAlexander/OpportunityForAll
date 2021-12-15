@@ -10,8 +10,10 @@
     android:background="@color/background">
 
     <androidx.fragment.app.FragmentContainerView
-        app:defaultNavHost="true"
         android:id="@+id/container"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="UselessParent"/>

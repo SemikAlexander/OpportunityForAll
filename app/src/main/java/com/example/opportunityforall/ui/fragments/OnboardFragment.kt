@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.rounding_active_tab
 import com.example.opportunityforall.adapters.ViewPageAdapter
 import com.example.opportunityforall.databinding.FragmentOnboardBinding
@@ -27,6 +29,14 @@ class OnboardFragment : Fragment() {
 
         binding.run {
             viewPager.adapter = ViewPageAdapter(requireContext())
+
+            getStartedButton.setOnClickListener {
+                findNavController().navigate(R.id.action_onboardFragment_to_loginFragment)
+            }
+
+            skipButton.setOnClickListener {
+                findNavController().navigate(R.id.action_onboardFragment_to_loginFragment)
+            }
 
             nextButton.setOnClickListener {
                 if (viewPager.currentItem != 1) {

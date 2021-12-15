@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments
+package com.example.opportunityforall.ui.fragments.athlete
 
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentAthlete1Binding
 
 class AthleteFragment1 : Fragment() {
@@ -34,6 +36,14 @@ class AthleteFragment1 : Fragment() {
             hideConfirmPassword.setOnClickListener {
                 visibleChange(hideConfirmPassword, confirmPassword)
             }
+
+            cancelAction.setOnClickListener {
+                findNavController().navigate(R.id.action_athleteFragment1_to_loginFragment)
+            }
+
+            nextButton.setOnClickListener {
+                findNavController().navigate(R.id.action_athleteFragment1_to_athleteFragment2)
+            }
         }
     }
 
@@ -45,7 +55,7 @@ class AthleteFragment1 : Fragment() {
             }
             else {
                 editText.transformationMethod = PasswordTransformationMethod.getInstance()
-                imageView.tag = "show"
+                imageView.tag = "hide"
             }
         }
     }

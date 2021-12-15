@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".ui.fragments.CommunityMemberFragment1">
+    tools:context=".ui.fragments.community.CommunityMemberFragment1">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -109,142 +109,150 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:fillViewport="true"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatImageView">
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/name"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounding_edit_text"
-            android:fontFamily="@font/proxima_nova_bold"
-            android:hint="Name"
-            android:paddingStart="20dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:textSize="16sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/phone_number"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounding_edit_text"
-            android:fontFamily="@font/proxima_nova_bold"
-            android:hint="Phone Number"
-            android:paddingStart="20dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:textSize="16sp"
-            tools:ignore="RtlSymmetry" />
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounding_edit_text"
-            android:fontFamily="@font/proxima_nova_bold"
-            android:hint="E-mail"
-            android:paddingStart="20dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:textSize="16sp"
-            tools:ignore="RtlSymmetry" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:background="@drawable/rounding_edit_text"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp">
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@android:color/transparent"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:hint="Password"
-                android:textColorHint="@color/white"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounding_edit_text"
                 android:fontFamily="@font/proxima_nova_bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/hidePassword"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/hidePassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background=""
-                android:layout_marginEnd="21dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_eye"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:tag="hide"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:background="@drawable/rounding_edit_text"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp">
-
-            <EditText
-                android:id="@+id/confirm_password"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@android:color/transparent"
+                android:hint="Name"
+                android:paddingStart="20dp"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:hint="Confirm Password"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounding_edit_text"
                 android:fontFamily="@font/proxima_nova_bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/hideConfirmPassword"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:hint="Phone Number"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
 
-            <ImageView
-                android:id="@+id/hideConfirmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background=""
-                android:layout_marginEnd="21dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_eye"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:tag="hide"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounding_edit_text"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="E-mail"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounding_edit_text">
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="Password"
+                    android:password="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/hidePassword"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/hidePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_eye"
+                    android:tag="hide"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounding_edit_text">
+
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="Confirm Password"
+                    android:password="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/hideConfirmPassword"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/hideConfirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_eye"
+                    android:tag="hide"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -264,11 +272,11 @@
             android:layout_marginTop="17dp"
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="34dp"
-            android:background="@drawable/rounding_skip"
+            android:background="@drawable/rounding_back_enabled"
             android:enabled="false"
             android:fontFamily="@font/proxima_nova_bold"
             android:text="@string/back"
-            android:textColor="@color/white"
+            android:textColor="@color/enabled"
             android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -280,7 +288,6 @@
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="34dp"
             android:background="@drawable/rounding_next"
-            android:enabled="false"
             android:fontFamily="@font/proxima_nova_bold"
             android:text="@string/next"
             android:textColor="#333333"

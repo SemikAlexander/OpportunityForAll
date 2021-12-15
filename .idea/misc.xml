@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.20843881856540084" />
+        <entry key="app/src/main/res/drawable/rounding_back_enabled.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/drawable/rounding_bottom_tab.xml" value="0.24722222222222223" />
         <entry key="app/src/main/res/drawable/rounding_choise_active.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable/rounding_choise_default.xml" value="0.2296875" />
@@ -26,7 +27,7 @@
         <entry key="app/src/main/res/layout/fragment_athlete3.xml" value="0.16802536231884058" />
         <entry key="app/src/main/res/layout/fragment_athlete4.xml" value="0.16802536231884058" />
         <entry key="app/src/main/res/layout/fragment_athlete5.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.17063526625555905" />
+        <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.23717409587888982" />
         <entry key="app/src/main/res/layout/fragment_community_member2.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />

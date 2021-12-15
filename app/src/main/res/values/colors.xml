@@ -8,6 +8,7 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="text_hint">#D0D0D0</color>
 
     <color name="background">#150636</color>
     <color name="tab_active_color">#AD7EFF</color>

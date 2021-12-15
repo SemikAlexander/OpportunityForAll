@@ -3,4 +3,18 @@
     <string name="skip">SKIP</string>
     <string name="next">NEXT</string>
     <string name="sign_up">Sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Back</string>
+    <string name="register">Register</string>
+    <string name="basic_info">Basic info</string>
+    <string name="academic_info">Academic info</string>
+    <string name="sports_info">Sports info</string>
+    <string name="as_a_student_athlete">As a student-athlete</string>
+    <string name="verification_site">Verification for Our Site</string>
+    <string name="verify">In order for you to participate on our site, we need you to provide a few pieces of information so we can verify you.</string>
+    <string name="hint_url">htpps://www...</string>
+    <string name="validate">We need a link to your profile page on your university\'s official athletic department website so we can validate that you\'re on the team.</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-mail</string>
 </resources>

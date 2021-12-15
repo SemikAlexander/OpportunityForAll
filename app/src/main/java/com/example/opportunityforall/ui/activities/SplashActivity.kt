@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui
+package com.example.opportunityforall.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

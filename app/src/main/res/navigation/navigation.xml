@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.opportunityforall.ui.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.opportunityforall.ui.fragments.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_communityMemberFragment1"
+            app:destination="@id/communityMemberFragment1" />
+        <action
+            android:id="@+id/action_signUpFragment_to_athleteFragment1"
+            app:destination="@id/athleteFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityMemberFragment1"
+        android:name="com.example.opportunityforall.ui.fragments.CommunityMemberFragment1"
+        android:label="fragment_community_member1"
+        tools:layout="@layout/fragment_community_member1" >
+        <action
+            android:id="@+id/action_communityMemberFragment1_to_communityMemberFragment2"
+            app:destination="@id/communityMemberFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityMemberFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.CommunityMemberFragment2"
+        android:label="fragment_community_member2"
+        tools:layout="@layout/fragment_community_member2" >
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment1"
+        android:name="com.example.opportunityforall.ui.fragments.AthleteFragment1"
+        android:label="fragment_athlete1"
+        tools:layout="@layout/fragment_athlete1" >
+        <action
+            android:id="@+id/action_athleteFragment1_to_athleteFragment22"
+            app:destination="@id/athleteFragment22" />
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment22"
+        android:name="com.example.opportunityforall.ui.fragments.AthleteFragment2"
+        android:label="fragment_athlete2"
+        tools:layout="@layout/fragment_athlete2" >
+        <action
+            android:id="@+id/action_athleteFragment22_to_athleteFragment3"
+            app:destination="@id/athleteFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment3"
+        android:name="com.example.opportunityforall.ui.fragments.AthleteFragment3"
+        android:label="fragment_athlete3"
+        tools:layout="@layout/fragment_athlete3" >
+        <action
+            android:id="@+id/action_athleteFragment3_to_athleteFragment4"
+            app:destination="@id/athleteFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment4"
+        android:name="com.example.opportunityforall.ui.fragments.AthleteFragment4"
+        android:label="fragment_athlete4"
+        tools:layout="@layout/fragment_athlete4" >
+        <action
+            android:id="@+id/action_athleteFragment4_to_athleteFragment5"
+            app:destination="@id/athleteFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment5"
+        android:name="com.example.opportunityforall.ui.fragments.AthleteFragment5"
+        android:label="fragment_athlete5"
+        tools:layout="@layout/fragment_athlete5" />
+</navigation>

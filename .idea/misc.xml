@@ -4,15 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.20843881856540084" />
+        <entry key="app/src/main/res/drawable/rounding_active_tab.xml" value="0.21666666666666667" />
+        <entry key="app/src/main/res/drawable/rounding_avatar.xml" value="0.25729166666666664" />
         <entry key="app/src/main/res/drawable/rounding_back_enabled.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/drawable/rounding_bottom_tab.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/drawable/rounding_choice_default.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/rounding_choise_active.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable/rounding_choise_default.xml" value="0.2296875" />
+        <entry key="app/src/main/res/drawable/rounding_corners.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/rounding_edit_text.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/rounding_image.xml" value="0.20843881856540084" />
         <entry key="app/src/main/res/drawable/rounding_image_button.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/drawable/rounding_login.xml" value="0.1648148148148148" />
         <entry key="app/src/main/res/drawable/rounding_next.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/drawable/rounding_search.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/drawable/rounding_skip.xml" value="0.11927083333333334" />
         <entry key="app/src/main/res/drawable/roundung_default_tab.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable/roundung_tab.xml" value="0.25277777777777777" />
@@ -23,7 +28,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10734654154188678" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.22512562814070353" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.12817028985507245" />
-        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.339815739681463" />
+        <entry key="app/src/main/res/layout/athletes_recycle_view.xml" value="0.30112868598580195" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23959767223176934" />
         <entry key="app/src/main/res/layout/fragment_athlete1.xml" value="0.1515013642940396" />
         <entry key="app/src/main/res/layout/fragment_athlete2.xml" value="0.21354609780970168" />
         <entry key="app/src/main/res/layout/fragment_athlete3.xml" value="0.16802536231884058" />
@@ -31,11 +37,23 @@
         <entry key="app/src/main/res/layout/fragment_athlete5.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.23717409587888982" />
         <entry key="app/src/main/res/layout/fragment_community_member2.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_flow1.xml" value="0.18632478632478633" />
+        <entry key="app/src/main/res/layout/fragment_flow2.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/fragment_flow3.xml" value="0.18632478632478633" />
+        <entry key="app/src/main/res/layout/fragment_flow4.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_flow5.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_flow6.xml" value="0.23619516825369727" />
+        <entry key="app/src/main/res/layout/fragment_flow_fragmen4.xml" value="0.18632478632478633" />
+        <entry key="app/src/main/res/layout/fragment_get_started.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_hello.xml" value="0.20636406856383122" />
+        <entry key="app/src/main/res/layout/fragment_info_athlete.xml" value="0.28192448987848434" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.11727456940222898" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.13166111989711266" />
+        <entry key="app/src/main/res/layout/requests_recycle_view.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/row.xml" value="0.13333139411433131" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19786324786324785" />
       </map>
     </option>
   </component>

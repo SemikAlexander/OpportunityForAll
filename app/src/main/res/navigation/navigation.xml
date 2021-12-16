@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_helloFragment"
+            app:destination="@id/helloFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -20,45 +23,26 @@
         android:label="SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
         <action
-            android:id="@+id/action_signUpFragment_to_communityMemberFragment1"
-            app:destination="@id/communityMemberFragment1" />
-        <action
             android:id="@+id/action_signUpFragment_to_athleteFragment1"
             app:destination="@id/athleteFragment1" />
         <action
-            android:id="@+id/action_signUpFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_signUpFragment_to_communityMemberFragment1"
+            app:destination="@id/communityMemberFragment1" />
     </fragment>
     <fragment
         android:id="@+id/communityMemberFragment1"
-        android:name="com.example.opportunityforall.ui.fragments.community.CommunityMemberFragment1"
+        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberFragment1"
         android:label="fragment_community_member1"
         tools:layout="@layout/fragment_community_member1" >
         <action
             android:id="@+id/action_communityMemberFragment1_to_communityMemberFragment2"
             app:destination="@id/communityMemberFragment2" />
-        <action
-            android:id="@+id/action_communityMemberFragment1_to_loginFragment"
-            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/communityMemberFragment2"
-        android:name="com.example.opportunityforall.ui.fragments.community.CommunityMemberFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberFragment2"
         android:label="fragment_community_member2"
-        tools:layout="@layout/fragment_community_member2" >
-        <action
-            android:id="@+id/action_communityMemberFragment2_to_communityMemberFragment1"
-            app:destination="@id/communityMemberFragment1" />
-        <action
-            android:id="@+id/action_communityMemberFragment2_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_communityMemberFragment2_to_loginFragment2"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_communityMemberFragment2_to_loginFragment3"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_community_member2" />
     <fragment
         android:id="@+id/athleteFragment1"
         android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment1"
@@ -67,9 +51,6 @@
         <action
             android:id="@+id/action_athleteFragment1_to_athleteFragment2"
             app:destination="@id/athleteFragment2" />
-        <action
-            android:id="@+id/action_athleteFragment1_to_loginFragment"
-            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/athleteFragment2"
@@ -79,12 +60,6 @@
         <action
             android:id="@+id/action_athleteFragment2_to_athleteFragment3"
             app:destination="@id/athleteFragment3" />
-        <action
-            android:id="@+id/action_athleteFragment2_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_athleteFragment2_to_athleteFragment1"
-            app:destination="@id/athleteFragment1" />
     </fragment>
     <fragment
         android:id="@+id/athleteFragment3"
@@ -94,12 +69,6 @@
         <action
             android:id="@+id/action_athleteFragment3_to_athleteFragment4"
             app:destination="@id/athleteFragment4" />
-        <action
-            android:id="@+id/action_athleteFragment3_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_athleteFragment3_to_athleteFragment2"
-            app:destination="@id/athleteFragment2" />
     </fragment>
     <fragment
         android:id="@+id/athleteFragment4"
@@ -109,35 +78,97 @@
         <action
             android:id="@+id/action_athleteFragment4_to_athleteFragment5"
             app:destination="@id/athleteFragment5" />
-        <action
-            android:id="@+id/action_athleteFragment4_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_athleteFragment4_to_athleteFragment3"
-            app:destination="@id/athleteFragment3" />
     </fragment>
     <fragment
         android:id="@+id/athleteFragment5"
         android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment5"
         android:label="fragment_athlete5"
-        tools:layout="@layout/fragment_athlete5" >
-        <action
-            android:id="@+id/action_athleteFragment5_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_athleteFragment5_to_loginFragment2"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_athleteFragment5_to_athleteFragment4"
-            app:destination="@id/athleteFragment4" />
-    </fragment>
+        tools:layout="@layout/fragment_athlete5" />
     <fragment
         android:id="@+id/onboardFragment"
         android:name="com.example.opportunityforall.ui.fragments.OnboardFragment"
         android:label="OnboardFragment"
-        tools:layout="@layout/fragment_onboard">
+        tools:layout="@layout/fragment_onboard" >
         <action
             android:id="@+id/action_onboardFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/helloFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.HelloFragment"
+        android:label="fragment_hello"
+        tools:layout="@layout/fragment_hello" >
+        <action
+            android:id="@+id/action_helloFragment_to_infoAthleteFragment"
+            app:destination="@id/infoAthleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.InfoAthleteFragment"
+        android:label="fragment_info_athlete"
+        tools:layout="@layout/fragment_info_athlete" >
+        <action
+            android:id="@+id/action_infoAthleteFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_flowFragment1"
+            app:destination="@id/flowFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment1"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment1"
+        android:label="fragment_flow1"
+        tools:layout="@layout/fragment_flow1" >
+        <action
+            android:id="@+id/action_flowFragment1_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment2"
+        android:label="fragment_flow2"
+        tools:layout="@layout/fragment_flow2" >
+        <action
+            android:id="@+id/action_flowFragment2_to_flowFragment3"
+            app:destination="@id/flowFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment3"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment3"
+        android:label="fragment_flow3"
+        tools:layout="@layout/fragment_flow3" >
+        <action
+            android:id="@+id/action_flowFragment3_to_flowFragment4"
+            app:destination="@id/flowFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment4"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment4"
+        android:label="fragment_flow4"
+        tools:layout="@layout/fragment_flow4" >
+        <action
+            android:id="@+id/action_flowFragment4_to_flowFragment5"
+            app:destination="@id/flowFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment5"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment5"
+        android:label="fragment_flow5"
+        tools:layout="@layout/fragment_flow5" >
+        <action
+            android:id="@+id/action_flowFragment5_to_flowFragment6"
+            app:destination="@id/flowFragment6" />
+    </fragment>
+    <fragment
+        android:id="@+id/flowFragment6"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment6"
+        android:label="fragment_flow6"
+        tools:layout="@layout/fragment_flow6" />
 </navigation>

@@ -4,16 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.athlete.AthleteFragment1"
+    tools:context=".ui.fragments.community.actions.flow.FlowFragment4"
     android:background="@color/background">
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ball"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView6"
@@ -22,7 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="@string/sign_up"
+        android:text="@string/flow_form"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,26 +28,11 @@
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/proxima_nova_semibold"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="#776F82"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/community_member"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/proxima_nova_bold"
-        android:text="As a student-athlete"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -67,7 +44,7 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/community_member">
+        app:layout_constraintTop_toBottomOf="@+id/cancel_action">
 
         <View
             android:id="@+id/view1"
@@ -86,7 +63,7 @@
             android:layout_height="4dp"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"
-            android:background="@drawable/rounding_default_tab"
+            android:background="@drawable/rounding_active_tab"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/view3"
             app:layout_constraintStart_toEndOf="@+id/view1"
@@ -98,7 +75,7 @@
             android:layout_height="4dp"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"
-            android:background="@drawable/rounding_default_tab"
+            android:background="@drawable/rounding_active_tab"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/view4"
             app:layout_constraintStart_toEndOf="@+id/view2"
@@ -110,7 +87,7 @@
             android:layout_height="4dp"
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"
-            android:background="@drawable/rounding_default_tab"
+            android:background="@drawable/rounding_active_tab"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/view5"
             app:layout_constraintStart_toEndOf="@+id/view3"
@@ -121,135 +98,151 @@
             android:layout_width="0dp"
             android:layout_height="4dp"
             android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/rounding_default_tab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/view6"
+            app:layout_constraintStart_toEndOf="@+id/view4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
             android:background="@drawable/rounding_default_tab"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/view4"
+            app:layout_constraintStart_toEndOf="@+id/view5"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/email"
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="@string/date_event"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/location_constraint_layout"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounding_edit_text"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/location_event_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_location"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/location_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:hint="Location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/location_event_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="@string/compensation_per_hour"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/compensation_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/rounding_edit_text"
+            android:layout_marginBottom="30dp">
+
+            <Spinner
+                android:id="@+id/compensation_spinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_compensation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/open_spin_compensation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_keyboard_arrow_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="@string/compensation_amount_hour"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
             android:background="@drawable/rounding_edit_text"
             android:fontFamily="@font/proxima_nova_bold"
-            android:hint="E-mail"
+            android:hint="@string/answer"
+            android:textColorHighlight="@color/text_hint"
             android:paddingStart="20dp"
             android:textColor="@color/white"
             android:textColorHint="@color/text_hint"
             android:textSize="16sp"
-            tools:ignore="RtlSymmetry" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounding_edit_text">
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="Password"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp"
-                android:password="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/hidePassword"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/hidePassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="21dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_eye"
-                android:tag="hide"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/rounding_edit_text">
-
-            <EditText
-                android:id="@+id/confirm_password"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="Confirm Password"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="16sp"
-                android:password="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/hideConfirmPassword"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/hideConfirmPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="21dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_eye"
-                android:tag="hide"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/proxima_nova"
-        android:text="By continuing, you agree
-Terms of Service and Privacy Policy"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -269,11 +262,10 @@ Terms of Service and Privacy Policy"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="34dp"
-            android:background="@drawable/rounding_back_enabled"
-            android:enabled="false"
+            android:background="@drawable/rounding_skip"
             android:fontFamily="@font/proxima_nova_bold"
             android:text="@string/back"
-            android:textColor="@color/enabled"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton

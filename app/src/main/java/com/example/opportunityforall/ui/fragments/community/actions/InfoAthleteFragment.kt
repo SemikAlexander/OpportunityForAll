@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.community.actions
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentAthlete4Binding
+import com.example.opportunityforall.databinding.FragmentInfoAthleteBinding
 
-class AthleteFragment4 : Fragment() {
-    private var _binding: FragmentAthlete4Binding? = null
+class InfoAthleteFragment : Fragment() {
+
+    private var _binding: FragmentInfoAthleteBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAthlete4Binding.inflate(layoutInflater)
+        _binding = FragmentInfoAthleteBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -25,16 +26,12 @@ class AthleteFragment4 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-            cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.loginFragment, false)
+            cooperationRequest.setOnClickListener {
+                findNavController().navigate(R.id.action_infoAthleteFragment_to_getStartedFragment)
             }
 
             backButton.setOnClickListener {
                 findNavController().popBackStack()
-            }
-
-            nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment4_to_athleteFragment5)
             }
         }
     }

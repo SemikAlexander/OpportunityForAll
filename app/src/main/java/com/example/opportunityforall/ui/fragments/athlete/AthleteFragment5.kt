@@ -27,15 +27,15 @@ class AthleteFragment5 : Fragment() {
 
         binding.run {
             cancelAction.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment5_to_loginFragment)
+                findNavController().popBackStack(R.id.loginFragment, false)
             }
 
             backButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment5_to_athleteFragment4)
+                findNavController().popBackStack()
             }
 
             register.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment5_to_loginFragment)
+                findNavController().popBackStack(R.id.loginFragment, false)
             }
         }
     }

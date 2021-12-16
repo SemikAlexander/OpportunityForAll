@@ -38,7 +38,7 @@ class AthleteFragment1 : Fragment() {
             }
 
             cancelAction.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment1_to_loginFragment)
+                findNavController().popBackStack(R.id.loginFragment, false)
             }
 
             nextButton.setOnClickListener {

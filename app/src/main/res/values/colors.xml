@@ -14,4 +14,9 @@
     <color name="tab_active_color">#AD7EFF</color>
     <color name="tab_default_color">#9F9FAB</color>
     <color name="enabled">#827D8E</color>
+    <color name="hint_search">#776F82</color>
+    <color name="info_athlete">#EBEBF5</color>
+    <color name="rows_info_athlete">#9e99af</color>
+    <color name="rv_background">#2A1E45</color>
+    <color name="new_rv">#A8EA91</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community
+package com.example.opportunityforall.ui.fragments.community.sign_up
 
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
@@ -10,8 +10,8 @@ import android.widget.EditText
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.action_communityMemberFragment1_to_communityMemberFragment2
-import com.example.opportunityforall.R.id.action_communityMemberFragment1_to_loginFragment
 import com.example.opportunityforall.databinding.FragmentCommunityMember1Binding
 
 class CommunityMemberFragment1 : Fragment() {
@@ -40,7 +40,7 @@ class CommunityMemberFragment1 : Fragment() {
             }
 
             cancelAction.setOnClickListener {
-                findNavController().navigate(action_communityMemberFragment1_to_loginFragment)
+                findNavController().popBackStack(R.id.loginFragment, false)
             }
 
             nextButton.setOnClickListener {

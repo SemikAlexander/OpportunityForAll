@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community
+package com.example.opportunityforall.ui.fragments.community.sign_up
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,13 +27,12 @@ class CommunityMemberFragment2 : Fragment() {
 
         binding.run {
             cancelAction.setOnClickListener {
-                findNavController().navigate(action_communityMemberFragment2_to_loginFragment)
+                findNavController().popBackStack(loginFragment, false)
             }
 
             registerButton.setOnClickListener {
-                findNavController().navigate(
-                    action_athleteFragment2_to_loginFragment
-                )
+                findNavController()
+                findNavController().popBackStack(loginFragment, false)
             }
         }
     }

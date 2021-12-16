@@ -11,7 +11,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.*
 import com.example.opportunityforall.databinding.FragmentSignUpBinding
-import com.example.opportunityforall.toast
 
 class SignUpFragment : Fragment() {
 
@@ -38,7 +37,7 @@ class SignUpFragment : Fragment() {
             }
 
             cancelAction.setOnClickListener {
-                findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
+                findNavController().popBackStack()
             }
 
             community.setOnClickListener {
@@ -60,7 +59,7 @@ class SignUpFragment : Fragment() {
             ContextCompat.getDrawable(requireContext(), rounding_choise_active)
 
         linear2.background =
-            ContextCompat.getDrawable(requireContext(), rounding_choise_default)
+            ContextCompat.getDrawable(requireContext(), rounding_choice_default)
 
         binding.nextButton.isEnabled = true
     }

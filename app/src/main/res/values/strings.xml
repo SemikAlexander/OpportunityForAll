@@ -18,4 +18,25 @@
     <string name="name">Name</string>
     <string name="e_mail">E-mail</string>
     <string name="about">About</string>
+    <string name="search_by_name_hint">Search by name</string>
+    <string name="cooperation_request">Cooperation request</string>
+    <string name="get_started">Get started</string>
+    <string name="cancel">Cancel</string>
+    <string name="flow_form">FLOW Contract Form</string>
+    <string name="engagement_type">What Type of Engagement is this? *</string>
+    <string name="describe">Please describe, in 1,000 characters or fewer, the Event. *</string>
+    <string name="answer">Your answer</string>
+    <string name="date_event">What is the Date of the Event? *</string>
+    <string name="duration_event">What is the Duration of the Event in Hours? *</string>
+    <string name="start_event">What is the Start Time of the Event? *</string>
+    <string name="compensation_per_hour">What is the Compensation Rate in $ per Hour? *</string>
+    <string name="compensation_amount_hour">What is the Compensation Amount in Total $? *</string>
+    <string name="sponsors_solution">Will Sponsor make (and pay for) all travel arrangements for Athlete\'s appearance at the Event? *</string>
+    <string name="athlete_obligations">What are the Athlete\'s Obligations (check all that apply)?</string>
+    <string name="send">Send</string>
+    <string name="cancellation_policy">Please select a cancellation policy to apply to this contract: *</string>
+    <string name="orders">Orders</string>
+    <string name="chats">Chats</string>
+    <string name="profile">Profile</string>
+    <string name="new_rv">New</string>
 </resources>

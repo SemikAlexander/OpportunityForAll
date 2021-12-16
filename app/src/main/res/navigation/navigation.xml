@@ -96,9 +96,9 @@
 
     <fragment
         android:id="@+id/helloFragment"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.HelloFragment"
+        android:name="com.example.opportunityforall.ui.fragments.bottom_nav_fragments.AthletesFragment"
         android:label="fragment_hello"
-        tools:layout="@layout/fragment_hello" >
+        tools:layout="@layout/fragment_athletes" >
         <action
             android:id="@+id/action_helloFragment_to_infoAthleteFragment"
             app:destination="@id/infoAthleteFragment" />

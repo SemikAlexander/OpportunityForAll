@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions
+package com.example.opportunityforall.ui.fragments.bottom_nav_fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentHelloBinding
 
-class HelloFragment : Fragment() {
+class AthletesFragment : Fragment() {
 
     private var _binding: FragmentHelloBinding? = null
     private val binding get() = _binding!!

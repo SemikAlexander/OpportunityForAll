@@ -18,5 +18,6 @@
     <color name="info_athlete">#EBEBF5</color>
     <color name="rows_info_athlete">#9e99af</color>
     <color name="rv_background">#2A1E45</color>
+    <color name="date_request_text_color">#EBEBF5</color>
     <color name="new_rv">#A8EA91</color>
 </resources>

@@ -19,6 +19,7 @@
     <string name="e_mail">E-mail</string>
     <string name="about">About</string>
     <string name="search_by_name_hint">Search by name</string>
+    <string name="search_hint">Search</string>
     <string name="cooperation_request">Cooperation request</string>
     <string name="get_started">Get started</string>
     <string name="cancel">Cancel</string>

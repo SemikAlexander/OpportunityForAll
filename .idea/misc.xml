@@ -49,9 +49,10 @@
         <entry key="app/src/main/res/layout/fragment_info_athlete.xml" value="0.28192448987848434" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
+        <entry key="app/src/main/res/layout/fragment_requests.xml" value="0.14185366244476535" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.11727456940222898" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.13166111989711266" />
-        <entry key="app/src/main/res/layout/requests_recycle_view.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/requests_recycle_view.xml" value="0.16665172135614018" />
         <entry key="app/src/main/res/layout/row.xml" value="0.13333139411433131" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19786324786324785" />
       </map>

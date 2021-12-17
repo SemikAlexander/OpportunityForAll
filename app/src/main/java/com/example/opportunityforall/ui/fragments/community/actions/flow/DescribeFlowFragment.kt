@@ -7,18 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentFlow1Binding
+import com.example.opportunityforall.databinding.FragmentDescribeFlowBinding
 
-class FlowFragment1 : Fragment() {
+class DescribeFlowFragment : Fragment() {
 
-    private var _binding: FragmentFlow1Binding? = null
+    private var _binding: FragmentDescribeFlowBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFlow1Binding.inflate(layoutInflater)
+        _binding = FragmentDescribeFlowBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -26,12 +26,16 @@ class FlowFragment1 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
             cancelAction.setOnClickListener {
                 findNavController().popBackStack(R.id.infoAthleteFragment, false)
             }
 
             nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_flowFragment1_to_flowFragment2)
+                findNavController().navigate(R.id.action_flowFragment2_to_flowFragment3)
             }
         }
     }

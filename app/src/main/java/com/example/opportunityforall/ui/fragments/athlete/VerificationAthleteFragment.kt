@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.flow
+package com.example.opportunityforall.ui.fragments.athlete
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,18 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentFlow2Binding
+import com.example.opportunityforall.databinding.FragmentAthleteVerificationBinding
 
-class FlowFragment2 : Fragment() {
+class VerificationAthleteFragment : Fragment() {
 
-    private var _binding: FragmentFlow2Binding? = null
+    private var _binding: FragmentAthleteVerificationBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFlow2Binding.inflate(layoutInflater)
+        _binding = FragmentAthleteVerificationBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -26,16 +26,16 @@ class FlowFragment2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            cancelAction.setOnClickListener {
+                findNavController().popBackStack(R.id.loginFragment, false)
+            }
+
             backButton.setOnClickListener {
                 findNavController().popBackStack()
             }
 
-            cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.infoAthleteFragment, false)
-            }
-
-            nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_flowFragment2_to_flowFragment3)
+            register.setOnClickListener {
+                findNavController().popBackStack(R.id.loginFragment, false)
             }
         }
     }

@@ -1,24 +1,24 @@
-package com.example.opportunityforall.ui.fragments.community.sign_up
+package com.example.opportunityforall.ui.fragments.athlete
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
-import com.example.opportunityforall.databinding.FragmentCommunityMember2Binding
+import com.example.opportunityforall.databinding.FragmentAthleteAcademicSportsInfoBinding
 
-class CommunityMemberFragment2 : Fragment() {
-
-    private var _binding: FragmentCommunityMember2Binding? = null
+class AcademicSportsAthleteFragment : Fragment() {
+    private var _binding: FragmentAthleteAcademicSportsInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentCommunityMember2Binding.inflate(layoutInflater)
+        _binding = FragmentAthleteAcademicSportsInfoBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -30,9 +30,14 @@ class CommunityMemberFragment2 : Fragment() {
                 findNavController().popBackStack(loginFragment, false)
             }
 
-            registerButton.setOnClickListener {
-                findNavController()
-                findNavController().popBackStack(loginFragment, false)
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
+            nextButton.setOnClickListener {
+                findNavController().navigate(
+                    action_academicSportsAthleteFragment_to_verificationAthleteFragment
+                )
             }
         }
     }

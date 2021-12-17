@@ -24,66 +24,66 @@
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_signUpFragment_to_athleteFragment1"
-            app:destination="@id/athleteFragment1" />
+            app:destination="@id/emailAthleteFragment" />
         <action
             android:id="@+id/action_signUpFragment_to_communityMemberFragment1"
-            app:destination="@id/communityMemberFragment1" />
+            app:destination="@id/communityMemberBasicInfoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/communityMemberFragment1"
-        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberFragment1"
-        android:label="fragment_community_member1"
-        tools:layout="@layout/fragment_community_member1" >
+        android:id="@+id/communityMemberBasicInfoFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberBasicInfoFragment"
+        android:label="fragment_community_member_basic_info"
+        tools:layout="@layout/fragment_community_member_basic_info" >
         <action
-            android:id="@+id/action_communityMemberFragment1_to_communityMemberFragment2"
-            app:destination="@id/communityMemberFragment2" />
+            android:id="@+id/action_communityMemberBasicInfoFragment_to_communityMemberLocationFragment"
+            app:destination="@id/communityMemberLocationFragment" />
     </fragment>
     <fragment
-        android:id="@+id/communityMemberFragment2"
-        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberFragment2"
-        android:label="fragment_community_member2"
-        tools:layout="@layout/fragment_community_member2" />
+        android:id="@+id/communityMemberLocationFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.sign_up.CommunityMemberLocationFragment"
+        android:label="fragment_community_member_location"
+        tools:layout="@layout/fragment_community_member_location" />
     <fragment
-        android:id="@+id/athleteFragment1"
-        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment1"
-        android:label="fragment_athlete1"
-        tools:layout="@layout/fragment_athlete1" >
+        android:id="@+id/emailAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.EmailAthleteFragment"
+        android:label="fragment_athlete_email"
+        tools:layout="@layout/fragment_athlete_email" >
         <action
-            android:id="@+id/action_athleteFragment1_to_athleteFragment2"
-            app:destination="@id/athleteFragment2" />
+            android:id="@+id/action_emailAthleteFragment_to_basicInfoAthleteFragment"
+            app:destination="@id/basicInfoAthleteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/athleteFragment2"
-        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment2"
-        android:label="fragment_athlete2"
-        tools:layout="@layout/fragment_athlete2" >
+        android:id="@+id/basicInfoAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.BasicInfoAthleteFragment"
+        android:label="fragment_athlete_basic_info"
+        tools:layout="@layout/fragment_athlete_basic_info" >
         <action
-            android:id="@+id/action_athleteFragment2_to_athleteFragment3"
-            app:destination="@id/athleteFragment3" />
+            android:id="@+id/action_basicInfoAthleteFragment_to_townsAthleteFragment"
+            app:destination="@id/townsAthleteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/athleteFragment3"
-        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment3"
-        android:label="fragment_athlete3"
-        tools:layout="@layout/fragment_athlete3" >
+        android:id="@+id/townsAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.TownsAthleteFragment"
+        android:label="fragment_athlete_towns"
+        tools:layout="@layout/fragment_athlete_towns" >
         <action
-            android:id="@+id/action_athleteFragment3_to_athleteFragment4"
-            app:destination="@id/athleteFragment4" />
+            android:id="@+id/action_townsAthleteFragment_to_academicSportsAthleteFragment"
+            app:destination="@id/academicSportsAthleteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/athleteFragment4"
-        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment4"
-        android:label="fragment_athlete4"
-        tools:layout="@layout/fragment_athlete4" >
+        android:id="@+id/academicSportsAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.AcademicSportsAthleteFragment"
+        android:label="fragment_athlete_academic_sports_info"
+        tools:layout="@layout/fragment_athlete_academic_sports_info" >
         <action
-            android:id="@+id/action_athleteFragment4_to_athleteFragment5"
-            app:destination="@id/athleteFragment5" />
+            android:id="@+id/action_academicSportsAthleteFragment_to_verificationAthleteFragment"
+            app:destination="@id/verificationAthleteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/athleteFragment5"
-        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteFragment5"
-        android:label="fragment_athlete5"
-        tools:layout="@layout/fragment_athlete5" />
+        android:id="@+id/verificationAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.VerificationAthleteFragment"
+        android:label="fragment_athlete_verification"
+        tools:layout="@layout/fragment_athlete_verification" />
     <fragment
         android:id="@+id/onboardFragment"
         android:name="com.example.opportunityforall.ui.fragments.OnboardFragment"
@@ -122,60 +122,60 @@
         tools:layout="@layout/fragment_get_started" >
         <action
             android:id="@+id/action_getStartedFragment_to_flowFragment1"
-            app:destination="@id/flowFragment1" />
+            app:destination="@id/engagementTypeFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment1"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment1"
-        android:label="fragment_flow1"
-        tools:layout="@layout/fragment_flow1" >
+        android:id="@+id/engagementTypeFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.EngagementTypeFlowFragment"
+        android:label="fragment_engagement_type_flow"
+        tools:layout="@layout/fragment_engagement_type_flow" >
         <action
-            android:id="@+id/action_flowFragment1_to_flowFragment2"
-            app:destination="@id/flowFragment2" />
+            android:id="@+id/action_engagementTypeFlowFragment_to_describeFlowFragment"
+            app:destination="@id/describeFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment2"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment2"
-        android:label="fragment_flow2"
-        tools:layout="@layout/fragment_flow2" >
+        android:id="@+id/describeFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.DescribeFlowFragment"
+        android:label="fragment_describe_flow"
+        tools:layout="@layout/fragment_describe_flow" >
         <action
             android:id="@+id/action_flowFragment2_to_flowFragment3"
-            app:destination="@id/flowFragment3" />
+            app:destination="@id/dateEventFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment3"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment3"
-        android:label="fragment_flow3"
-        tools:layout="@layout/fragment_flow3" >
+        android:id="@+id/dateEventFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.DateEventFlowFragment"
+        android:label="fragment_flow_date_event"
+        tools:layout="@layout/fragment_flow_date_event" >
         <action
-            android:id="@+id/action_flowFragment3_to_flowFragment4"
-            app:destination="@id/flowFragment4" />
+            android:id="@+id/action_dateEventFlowFragment_to_locationEventFlowFragment"
+            app:destination="@id/locationEventFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment4"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment4"
-        android:label="fragment_flow4"
-        tools:layout="@layout/fragment_flow4" >
+        android:id="@+id/locationEventFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.LocationEventFlowFragment"
+        android:label="fragment_flow_location_event"
+        tools:layout="@layout/fragment_flow_location_event" >
         <action
-            android:id="@+id/action_flowFragment4_to_flowFragment5"
-            app:destination="@id/flowFragment5" />
+            android:id="@+id/action_locationEventFlowFragment_to_sponsorFlowFragment"
+            app:destination="@id/sponsorFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment5"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment5"
-        android:label="fragment_flow5"
-        tools:layout="@layout/fragment_flow5" >
+        android:id="@+id/sponsorFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.SponsorFlowFragment"
+        android:label="fragment_flow_sponsor"
+        tools:layout="@layout/fragment_flow_sponsor" >
         <action
-            android:id="@+id/action_flowFragment5_to_flowFragment6"
-            app:destination="@id/flowFragment6" />
+            android:id="@+id/action_sponsorFlowFragment_to_cancellationPolicyFlowFragment"
+            app:destination="@id/cancellationPolicyFlowFragment" />
     </fragment>
     <fragment
-        android:id="@+id/flowFragment6"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment6"
-        android:label="fragment_flow6"
-        tools:layout="@layout/fragment_flow6" >
+        android:id="@+id/cancellationPolicyFlowFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.CancellationPolicyFlowFragment"
+        android:label="fragment_flow_cancellation_policy"
+        tools:layout="@layout/fragment_flow_cancellation_policy" >
         <action
-            android:id="@+id/action_flowFragment6_to_requestFragmentCommunity"
+            android:id="@+id/action_cancellationPolicyFlowFragment_to_requestFragmentCommunity"
             app:destination="@id/requestFragmentCommunity" />
     </fragment>
     <fragment
@@ -200,6 +200,9 @@
         <action
             android:id="@+id/action_profileFragment_to_editBusinessInfoFragment"
             app:destination="@id/editBusinessInfoFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/businessInfoFragment"
@@ -239,4 +242,9 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
         android:label="fragment_edit_business_info"
         tools:layout="@layout/fragment_edit_business_info" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

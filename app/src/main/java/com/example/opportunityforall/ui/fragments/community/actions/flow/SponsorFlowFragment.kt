@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.community.actions.flow
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentAthlete4Binding
+import com.example.opportunityforall.R.id.*
+import com.example.opportunityforall.databinding.FragmentFlowSponsorBinding
 
-class AthleteFragment4 : Fragment() {
-    private var _binding: FragmentAthlete4Binding? = null
+class SponsorFlowFragment : Fragment() {
+
+    private var _binding: FragmentFlowSponsorBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAthlete4Binding.inflate(layoutInflater)
+        _binding = FragmentFlowSponsorBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -25,16 +27,18 @@ class AthleteFragment4 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-            cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.loginFragment, false)
-            }
-
             backButton.setOnClickListener {
                 findNavController().popBackStack()
             }
 
+            cancelAction.setOnClickListener {
+                findNavController().popBackStack(infoAthleteFragment, false)
+            }
+
             nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment4_to_athleteFragment5)
+                findNavController().navigate(
+                    action_sponsorFlowFragment_to_cancellationPolicyFlowFragment
+                )
             }
         }
     }

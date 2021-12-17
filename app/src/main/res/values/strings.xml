@@ -49,4 +49,8 @@
     <string name="zipcode">Zipcode</string>
     <string name="add_business_info">Add business info</string>
     <string name="confirm">Confirm</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="location">Location</string>
+    <string name="save_changes">Save changes</string>
 </resources>

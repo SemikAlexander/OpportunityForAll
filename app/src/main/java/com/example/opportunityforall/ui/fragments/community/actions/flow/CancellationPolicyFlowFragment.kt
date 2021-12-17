@@ -7,18 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentFlow5Binding
+import com.example.opportunityforall.databinding.FragmentFlowCancellationPolicyBinding
 
-class FlowFragment5 : Fragment() {
+class CancellationPolicyFlowFragment : Fragment() {
 
-    private var _binding: FragmentFlow5Binding? = null
+    private var _binding: FragmentFlowCancellationPolicyBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFlow5Binding.inflate(layoutInflater)
+        _binding = FragmentFlowCancellationPolicyBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -35,7 +35,7 @@ class FlowFragment5 : Fragment() {
             }
 
             nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_flowFragment5_to_flowFragment6)
+                findNavController().navigate(R.id.action_cancellationPolicyFlowFragment_to_requestFragmentCommunity)
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.community.actions.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentAthlete3Binding
+import com.example.opportunityforall.R.id.*
+import com.example.opportunityforall.databinding.FragmentEditProfileBinding
 
-class AthleteFragment3 : Fragment() {
-    private var _binding: FragmentAthlete3Binding? = null
+class EditProfileFragment : Fragment() {
+
+    private var _binding: FragmentEditProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAthlete3Binding.inflate(layoutInflater)
+        _binding = FragmentEditProfileBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -25,16 +26,12 @@ class AthleteFragment3 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-            cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.loginFragment, false)
+            saveChanges.setOnClickListener {
+                findNavController().popBackStack(profileFragment, false)
             }
 
             backButton.setOnClickListener {
                 findNavController().popBackStack()
-            }
-
-            nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment3_to_athleteFragment4)
             }
         }
     }

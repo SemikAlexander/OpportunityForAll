@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
+    tools:context=".ui.fragments.community.actions.profile.EditProfileFragment"
     android:background="@color/background">
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -18,38 +18,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/trash_button"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/rounding_image_button"
-        android:src="@drawable/ic_trash"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView13"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="63dp"
         android:layout_marginTop="21dp"
-        android:layout_marginEnd="35dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:textAlignment="center"
-        android:text="@string/edit_business_info"
+        android:text="@string/edit_profile"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/trash_button"
         app:layout_constraintStart_toEndOf="@+id/back_button"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo2"
+            android:layout_gravity="bottom|center|right"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageButton
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/circle_button_photo"
+            android:src="@drawable/ic_edit_user_photo"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
@@ -58,121 +76,64 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView7"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/name_user"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
                 android:fontFamily="@font/proxima_nova_bold"
-                android:text="@string/business_information"
+                android:hint="@string/name"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phone_number_user"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="@string/phone_number"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_user"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounding_edit_text"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="@string/e_mail"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/location"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/business_name"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/business_name"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/years_in_business_constraint_layout"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7">
-
-                <Spinner
-                    android:id="@+id/years_in_business_spinner"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/open_spin_years_in_business"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/open_spin_years_in_business"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    android:src="@drawable/ic_keyboard_arrow_down"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/num_of_employees_constraint_layout"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7">
-
-                <Spinner
-                    android:id="@+id/num_of_employees_spinner"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/open_spin_num_of_employees"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/open_spin_num_of_employees"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    android:src="@drawable/ic_keyboard_arrow_down"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/business_location"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/business_location"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/city_business_constraint_layout"
@@ -246,34 +207,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/address_business"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/address"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/zip_code_business"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/zipcode"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
-
         </LinearLayout>
 
     </ScrollView>
@@ -295,7 +228,7 @@
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounding_next"
             android:fontFamily="@font/proxima_nova_bold"
-            android:text="save changes"
+            android:text="@string/save_changes"
             android:textColor="#333333"
             android:textSize="20sp" />
 

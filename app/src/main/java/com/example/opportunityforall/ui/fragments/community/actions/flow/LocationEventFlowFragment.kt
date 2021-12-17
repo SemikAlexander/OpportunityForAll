@@ -7,18 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentFlow4Binding
+import com.example.opportunityforall.databinding.FragmentFlowLocationEventBinding
 
-class FlowFragment4 : Fragment() {
+class LocationEventFlowFragment : Fragment() {
 
-    private var _binding: FragmentFlow4Binding? = null
+    private var _binding: FragmentFlowLocationEventBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFlow4Binding.inflate(layoutInflater)
+        _binding = FragmentFlowLocationEventBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -35,7 +35,7 @@ class FlowFragment4 : Fragment() {
             }
 
             nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_flowFragment4_to_flowFragment5)
+                findNavController().navigate(R.id.action_locationEventFlowFragment_to_sponsorFlowFragment)
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.community.sign_up
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,18 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentAthlete2Binding
+import com.example.opportunityforall.R.id.*
+import com.example.opportunityforall.databinding.FragmentCommunityMemberLocationBinding
 
-class AthleteFragment2 : Fragment() {
-    private var _binding: FragmentAthlete2Binding? = null
+class CommunityMemberLocationFragment : Fragment() {
+
+    private var _binding: FragmentCommunityMemberLocationBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAthlete2Binding.inflate(layoutInflater)
+        _binding = FragmentCommunityMemberLocationBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -26,15 +27,12 @@ class AthleteFragment2 : Fragment() {
 
         binding.run {
             cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.loginFragment, false)
+                findNavController().popBackStack(loginFragment, false)
             }
 
-            backButton.setOnClickListener {
-                findNavController().popBackStack()
-            }
-
-            nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment2_to_athleteFragment3)
+            registerButton.setOnClickListener {
+                findNavController()
+                findNavController().popBackStack(loginFragment, false)
             }
         }
     }

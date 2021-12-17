@@ -1,27 +1,29 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.community.sign_up
 
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentAthlete1Binding
+import com.example.opportunityforall.R.id.*
+import com.example.opportunityforall.databinding.FragmentCommunityMemberBasicInfoBinding
 
-class AthleteFragment1 : Fragment() {
-    private var _binding: FragmentAthlete1Binding? = null
+class CommunityMemberBasicInfoFragment : Fragment() {
+
+    private var _binding: FragmentCommunityMemberBasicInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAthlete1Binding.inflate(layoutInflater)
+        _binding = FragmentCommunityMemberBasicInfoBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -42,7 +44,9 @@ class AthleteFragment1 : Fragment() {
             }
 
             nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_athleteFragment1_to_athleteFragment2)
+                findNavController().navigate(
+                    action_communityMemberBasicInfoFragment_to_communityMemberLocationFragment
+                )
             }
         }
     }

@@ -43,10 +43,12 @@
         <entry key="app/src/main/res/layout/fragment_athlete5.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_athletes.xml" value="0.16143755415420208" />
         <entry key="app/src/main/res/layout/fragment_business_info.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_business_information.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.1573799443752091" />
         <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.23717409587888982" />
         <entry key="app/src/main/res/layout/fragment_community_member2.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_edit_business_info.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_flow1.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/fragment_flow2.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_flow3.xml" value="0.18632478632478633" />
@@ -57,6 +59,7 @@
         <entry key="app/src/main/res/layout/fragment_get_started.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_hello.xml" value="0.20636406856383122" />
         <entry key="app/src/main/res/layout/fragment_info_athlete.xml" value="0.28192448987848434" />
+        <entry key="app/src/main/res/layout/fragment_location.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1974079156320306" />

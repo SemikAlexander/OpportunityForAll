@@ -197,12 +197,19 @@
         <action
             android:id="@+id/action_profileFragment_to_changePasswordFragment"
             app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editBusinessInfoFragment"
+            app:destination="@id/editBusinessInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/businessInfoFragment"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.BusinessInfoFragment"
         android:label="fragment_business_info"
-        tools:layout="@layout/fragment_business_info" />
+        tools:layout="@layout/fragment_business_info" >
+        <action
+            android:id="@+id/action_businessInfoFragment_to_businessInformationFragment"
+            app:destination="@id/businessInformationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.AboutFragment"
@@ -213,4 +220,23 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.ChangePasswordFragment"
         android:label="fragment_change_password"
         tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/businessInformationFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.BusinessInformationFragment"
+        android:label="fragment_business_information"
+        tools:layout="@layout/fragment_business_information" >
+        <action
+            android:id="@+id/action_businessInformationFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/editBusinessInfoFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
+        android:label="fragment_edit_business_info"
+        tools:layout="@layout/fragment_edit_business_info" />
 </navigation>

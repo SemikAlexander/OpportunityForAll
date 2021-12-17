@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentChangePasswordBinding
 
@@ -44,6 +45,10 @@ class ChangePasswordFragment : Fragment() {
 
             hideConfirmNewPassword.setOnClickListener {
                 visibleChange(hideConfirmNewPassword, confirmNewPassword)
+            }
+
+            saveChanges.setOnClickListener {
+                findNavController().navigate(profileFragment)
             }
         }
     }

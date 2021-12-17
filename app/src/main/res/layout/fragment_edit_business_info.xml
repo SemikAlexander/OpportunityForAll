@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/back_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_keyboard_arrow_left"
+        android:background="@drawable/rounding_image_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/trash_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounding_image_button"
+        android:src="@drawable/ic_trash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textAlignment="center"
+        android:text="@string/edit_business_info"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/trash_button"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/business_information"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/business_name"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                android:hint="@string/business_name"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/years_in_business_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Spinner
+                    android:id="@+id/years_in_business_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_years_in_business"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/open_spin_years_in_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/num_of_employees_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Spinner
+                    android:id="@+id/num_of_employees_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_num_of_employees"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/open_spin_num_of_employees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/business_location"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                android:hint="@string/business_location"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/city_business_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Spinner
+                    android:id="@+id/city_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_city"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/open_spin_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/state_business_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Spinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_state"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/open_spin_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/address_business"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                android:hint="@string/address"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/zip_code_business"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                android:hint="@string/zipcode"
+                android:paddingStart="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:background="@drawable/rounding_corners"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_changes"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounding_next"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="save changes"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

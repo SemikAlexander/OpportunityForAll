@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.profile
+package com.example.opportunityforall.ui.fragments.community.actions.profile.business_info
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R
-import com.example.opportunityforall.R.id.*
-import com.example.opportunityforall.databinding.FragmentBusinessInfoBinding
+import com.example.opportunityforall.databinding.FragmentEditBusinessInfoBinding
 
-class BusinessInfoFragment : Fragment() {
+class EditBusinessInfoFragment : Fragment() {
 
-    private var _binding: FragmentBusinessInfoBinding? = null
+    private var _binding: FragmentEditBusinessInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentBusinessInfoBinding.inflate(layoutInflater)
+        _binding = FragmentEditBusinessInfoBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -31,10 +29,8 @@ class BusinessInfoFragment : Fragment() {
                 findNavController().popBackStack()
             }
 
-            addBusinessInfo.setOnClickListener {
-                findNavController().navigate(
-                    action_businessInfoFragment_to_businessInformationFragment
-                )
+            saveChanges.setOnClickListener {
+                findNavController().popBackStack()
             }
         }
     }

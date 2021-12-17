@@ -41,4 +41,12 @@
     <string name="profile">Profile</string>
     <string name="new_rv">New</string>
     <string name="requests">Requests</string>
+    <string name="edit_business_info">Edit Business Info</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_information">Business information</string>
+    <string name="business_location">Business Location</string>
+    <string name="address">Address</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="add_business_info">Add business info</string>
+    <string name="confirm">Confirm</string>
 </resources>

@@ -74,6 +74,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_business_info"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_marginStart="24dp"

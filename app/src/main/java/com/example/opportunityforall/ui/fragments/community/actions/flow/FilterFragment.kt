@@ -31,7 +31,8 @@ class FilterFragment : Fragment() {
             }
 
             clear.setOnClickListener {
-
+                universityEditText.text.clear()
+                universityEditText.clearFocus()
             }
 
             applyButton.setOnClickListener {

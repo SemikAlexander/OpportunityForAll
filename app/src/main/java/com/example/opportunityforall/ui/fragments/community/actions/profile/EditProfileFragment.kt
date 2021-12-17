@@ -8,6 +8,19 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentEditProfileBinding
+import com.example.opportunityforall.phoneNumberMask
+import ru.tinkoff.decoro.MaskImpl
+
+import ru.tinkoff.decoro.watchers.MaskFormatWatcher
+
+import ru.tinkoff.decoro.watchers.FormatWatcher
+
+import ru.tinkoff.decoro.parser.UnderscoreDigitSlotsParser
+
+import ru.tinkoff.decoro.slots.Slot
+
+
+
 
 class EditProfileFragment : Fragment() {
 
@@ -26,6 +39,8 @@ class EditProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            phoneNumberMask(phoneNumberUser)
+
             saveChanges.setOnClickListener {
                 findNavController().popBackStack(profileFragment, false)
             }

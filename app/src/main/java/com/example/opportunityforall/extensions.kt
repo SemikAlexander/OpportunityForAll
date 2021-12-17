@@ -4,9 +4,14 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
+import ru.tinkoff.decoro.MaskImpl
+import ru.tinkoff.decoro.parser.UnderscoreDigitSlotsParser
+import ru.tinkoff.decoro.watchers.FormatWatcher
+import ru.tinkoff.decoro.watchers.MaskFormatWatcher
 
 inline fun <reified A : Activity> Context.startActivity(configIntent: Intent.() -> Unit = {}) {
     startActivity(Intent(this, A::class.java).apply(configIntent))
@@ -27,3 +32,21 @@ fun Fragment.toast(message: String, duration: Int = Toast.LENGTH_SHORT) =
 
 fun Fragment.toast(@StringRes messageId: Int, duration: Int = Toast.LENGTH_SHORT) =
     Toast.makeText(activity, messageId, duration).show()
+
+fun phoneNumberMask(editText: EditText) {
+    val slots = UnderscoreDigitSlotsParser().parseSlots("+1 ___ ___ ___")
+    val formatWatcher: FormatWatcher =
+        MaskFormatWatcher( // форматировать текст будет вот он
+            MaskImpl.createTerminated(slots)
+        )
+    formatWatcher.installOn(editText)
+}
+
+fun zipCodeMask(editText: EditText) {
+    val slots = UnderscoreDigitSlotsParser().parseSlots("_____-____")
+    val formatWatcher: FormatWatcher =
+        MaskFormatWatcher( // форматировать текст будет вот он
+            MaskImpl.createTerminated(slots)
+        )
+    formatWatcher.installOn(editText)
+}

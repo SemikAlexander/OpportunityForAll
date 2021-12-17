@@ -27,7 +27,9 @@ class AthletesFragment : Fragment() {
 
         binding.run {
             filter.setOnClickListener {
-                findNavController().navigate(R.id.action_athletesFragment_to_infoAthleteFragment) //test!!!
+                findNavController().navigate(R.id.action_athletesFragment_to_filterFragment)
+
+                //findNavController().navigate(R.id.action_athletesFragment_to_infoAthleteFragment) //test!!!
             }
 
             avatarUser.setOnClickListener {

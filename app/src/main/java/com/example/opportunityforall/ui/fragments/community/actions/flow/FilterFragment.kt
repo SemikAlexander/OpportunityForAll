@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.profile.business_info
+package com.example.opportunityforall.ui.fragments.community.actions.flow
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,19 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.databinding.FragmentEditBusinessInfoBinding
-import com.example.opportunityforall.zipCodeMask
+import com.example.opportunityforall.R
+import com.example.opportunityforall.databinding.FragmentFilterBinding
 
-class EditBusinessInfoFragment : Fragment() {
+class FilterFragment : Fragment() {
 
-    private var _binding: FragmentEditBusinessInfoBinding? = null
+    private var _binding: FragmentFilterBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentEditBusinessInfoBinding.inflate(layoutInflater)
+        _binding = FragmentFilterBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -26,14 +26,16 @@ class EditBusinessInfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-            zipCodeMask(zipCodeBusiness)
-
-            backButton.setOnClickListener {
+            close.setOnClickListener {
                 findNavController().popBackStack()
             }
 
-            saveChanges.setOnClickListener {
-                findNavController().popBackStack()
+            clear.setOnClickListener {
+
+            }
+
+            applyButton.setOnClickListener {
+                findNavController().popBackStack(R.id.athletesFragment, false)
             }
         }
     }

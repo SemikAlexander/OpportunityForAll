@@ -105,6 +105,9 @@
         <action
             android:id="@+id/action_athletesFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_athletesFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoAthleteFragment"
@@ -247,4 +250,9 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
 </navigation>

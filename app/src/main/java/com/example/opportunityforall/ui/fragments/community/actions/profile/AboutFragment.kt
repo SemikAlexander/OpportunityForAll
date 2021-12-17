@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.flow
+package com.example.opportunityforall.ui.fragments.community.actions.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,19 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R
-import com.example.opportunityforall.databinding.FragmentFlow6Binding
+import com.example.opportunityforall.databinding.FragmentAboutBinding
 
-class FlowFragment6 : Fragment() {
-
-    private var _binding: FragmentFlow6Binding? = null
+class AboutFragment : Fragment() {
+    private var _binding: FragmentAboutBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFlow6Binding.inflate(layoutInflater)
+        _binding = FragmentAboutBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -28,14 +26,6 @@ class FlowFragment6 : Fragment() {
         binding.run {
             backButton.setOnClickListener {
                 findNavController().popBackStack()
-            }
-
-            cancelAction.setOnClickListener {
-                findNavController().popBackStack(R.id.infoAthleteFragment, false)
-            }
-
-            nextButton.setOnClickListener {
-                findNavController().navigate(R.id.action_flowFragment6_to_requestFragmentCommunity)
             }
         }
     }

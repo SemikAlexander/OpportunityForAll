@@ -31,7 +31,7 @@ class LoginFragment : Fragment() {
             }
 
             login.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_helloFragment)
+                findNavController().navigate(R.id.action_loginFragment_to_athletesFragment)
             }
         }
     }

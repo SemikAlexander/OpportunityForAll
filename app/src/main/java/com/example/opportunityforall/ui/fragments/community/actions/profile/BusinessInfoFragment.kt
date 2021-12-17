@@ -1,21 +1,23 @@
-package com.example.opportunityforall.ui.fragments
+package com.example.opportunityforall.ui.fragments.community.actions.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.opportunityforall.databinding.FragmentAboutBinding
+import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.databinding.FragmentBusinessInfoBinding
 
-class AboutFragment : Fragment() {
-    private var _binding: FragmentAboutBinding? = null
+class BusinessInfoFragment : Fragment() {
+
+    private var _binding: FragmentBusinessInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentAboutBinding.inflate(inflater, container, false)
+        _binding = FragmentBusinessInfoBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -23,7 +25,9 @@ class AboutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
+            }
         }
     }
 }

@@ -14,8 +14,8 @@
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_helloFragment"
-            app:destination="@id/helloFragment" />
+            android:id="@+id/action_loginFragment_to_athletesFragment"
+            app:destination="@id/athletesFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -95,13 +95,16 @@
     </fragment>
 
     <fragment
-        android:id="@+id/helloFragment"
-        android:name="com.example.opportunityforall.ui.fragments.bottom_nav_fragments.AthletesFragment"
+        android:id="@+id/athletesFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.bottom_nav_fragments.AthletesFragment"
         android:label="fragment_hello"
         tools:layout="@layout/fragment_athletes" >
         <action
-            android:id="@+id/action_helloFragment_to_infoAthleteFragment"
+            android:id="@+id/action_athletesFragment_to_infoAthleteFragment"
             app:destination="@id/infoAthleteFragment" />
+        <action
+            android:id="@+id/action_athletesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoAthleteFragment"
@@ -170,5 +173,44 @@
         android:id="@+id/flowFragment6"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FlowFragment6"
         android:label="fragment_flow6"
-        tools:layout="@layout/fragment_flow6" />
+        tools:layout="@layout/fragment_flow6" >
+        <action
+            android:id="@+id/action_flowFragment6_to_requestFragmentCommunity"
+            app:destination="@id/requestFragmentCommunity" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragmentCommunity"
+        android:name="com.example.opportunityforall.ui.fragments.community.bottom_nav_fragments.RequestFragmentCommunity"
+        android:label="fragment_request_community"
+        tools:layout="@layout/fragment_request_community" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_businessInfoFragment"
+            app:destination="@id/businessInfoFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessInfoFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.BusinessInfoFragment"
+        android:label="fragment_business_info"
+        tools:layout="@layout/fragment_business_info" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
 </navigation>

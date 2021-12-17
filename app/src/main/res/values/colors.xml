@@ -20,4 +20,8 @@
     <color name="rv_background">#2A1E45</color>
     <color name="date_request_text_color">#EBEBF5</color>
     <color name="new_rv">#A8EA91</color>
+    <color name="time_text">#958fa9</color>
+
+    <color name="discussion">#EAD191</color>
+    <color name="declined">#E86F85</color>
 </resources>

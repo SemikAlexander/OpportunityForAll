@@ -4,17 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.bottom_nav_fragments.RequestsFragment"
+    tools:context=".ui.fragments.athlete.bottom_nav_fragments.RequestsFragmentAthlete"
     android:background="@color/background">
 
     <TextView
-        android:id="@+id/name_user"
+        android:id="@+id/requests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="14dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="Requests"
+        android:text="@string/requests"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         android:background="@drawable/rounding_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_user">
+        app:layout_constraintTop_toBottomOf="@+id/requests">
 
         <ImageView
             android:id="@+id/imageView12"
@@ -72,6 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
         tools:itemCount="10"
-        tools:listitem="@layout/requests_recycle_view" />
+        tools:listitem="@layout/athlete_requests_recycle_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

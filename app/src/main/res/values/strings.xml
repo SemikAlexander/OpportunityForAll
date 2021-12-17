@@ -40,4 +40,5 @@
     <string name="chats">Chats</string>
     <string name="profile">Profile</string>
     <string name="new_rv">New</string>
+    <string name="requests">Requests</string>
 </resources>

@@ -57,43 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/city_business_constraint_layout"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounding_edit_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7">
-
-            <Spinner
-                android:id="@+id/sports_spinner"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@android:color/transparent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/open_spin_city"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/open_spin_city"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:src="@drawable/ic_keyboard_arrow_down"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/state_business_constraint_layout"
+            android:id="@+id/sport_constraint_layout"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -114,7 +78,59 @@
                 android:textColorHint="@color/text_hint"
                 app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/open_spin_state"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_sport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/sport_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/sport" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/open_spin_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_keyboard_arrow_down"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/university_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounding_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_university"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -134,7 +150,7 @@
 
 
             <ImageView
-                android:id="@+id/open_spin_state"
+                android:id="@+id/open_spin_university"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
@@ -148,13 +164,85 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/sport_type"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:background="@drawable/rounding_corners"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/apply_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/previous"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_keyboard_arrow_left"/>
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:rotationY="180"
+                    android:src="@drawable/ic_keyboard_arrow_left"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:text="@string/done"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:background="?android:attr/listDivider" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/apply_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="123dp"
         android:background="@drawable/rounding_corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/apply_button"

@@ -8,18 +8,18 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R.id.businessInfoFragment
 import com.example.opportunityforall.R.id.profileFragment
-import com.example.opportunityforall.databinding.FragmentLocationBinding
+import com.example.opportunityforall.databinding.FragmentLocationBusinessBinding
 
 class LocationFragment : Fragment() {
 
-    private var _binding: FragmentLocationBinding? = null
+    private var _binding: FragmentLocationBusinessBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentLocationBinding.inflate(layoutInflater)
+        _binding = FragmentLocationBusinessBinding.inflate(layoutInflater)
         return binding.root
     }
 

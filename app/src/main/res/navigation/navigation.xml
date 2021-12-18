@@ -232,14 +232,14 @@
         android:label="fragment_business_information"
         tools:layout="@layout/fragment_business_information" >
         <action
-            android:id="@+id/action_businessInformationFragment_to_locationFragment"
-            app:destination="@id/locationFragment" />
+            android:id="@+id/action_businessInformationFragment_to_businessLocationFragment"
+            app:destination="@id/businessLocationFragment" />
     </fragment>
     <fragment
-        android:id="@+id/locationFragment"
+        android:id="@+id/businessLocationFragment"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.LocationFragment"
         android:label="fragment_location"
-        tools:layout="@layout/fragment_location" />
+        tools:layout="@layout/fragment_location_business" />
     <fragment
         android:id="@+id/editBusinessInfoFragment"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
@@ -255,4 +255,18 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.flow.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.bottom_nav_fragments.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
 </navigation>

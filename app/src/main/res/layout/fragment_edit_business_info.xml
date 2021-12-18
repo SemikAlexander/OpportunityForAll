@@ -74,19 +74,34 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/business_name"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/business_name"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
+                app:hintTextColor="@color/text_hint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_sport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/business_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/rounding_edit_text"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="@string/business_name"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/years_in_business_constraint_layout"
@@ -246,33 +261,61 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/address_business"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/address"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
+                app:hintTextColor="@color/text_hint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_sport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/zip_code_business"
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/address_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/rounding_edit_text"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="@string/address"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounding_edit_text"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:hint="@string/zipcode"
-                android:paddingStart="20dp"
-                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp"
-                tools:ignore="RtlSymmetry" />
+                app:hintTextColor="@color/text_hint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_sport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/zip_code_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/rounding_edit_text"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="@string/zipcode"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 

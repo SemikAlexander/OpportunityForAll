@@ -9,6 +9,8 @@
         <entry key="app/src/main/res/drawable/custom_thumb_seekbar.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.20843881856540084" />
         <entry key="app/src/main/res/drawable/ic_flow.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_keyboard_arrow_left.xml" value="0.11324786324786325" />
+        <entry key="app/src/main/res/drawable/ic_keyboard_arrow_right.xml" value="0.11324786324786325" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/profile_menu.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/rounding_active_tab.xml" value="0.21666666666666667" />
@@ -38,6 +40,7 @@
         <entry key="app/src/main/res/layout/athlete_requests_recycle_view.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/athletes_recycle_view.xml" value="0.30112868598580195" />
         <entry key="app/src/main/res/layout/chats_recycle_view.xml" value="0.2794702214140998" />
+        <entry key="app/src/main/res/layout/choise_buttom_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/community_requests_recycle_view.xml" value="0.23241910454906176" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23959767223176934" />
         <entry key="app/src/main/res/layout/fragment_athlete1.xml" value="0.1515013642940396" />
@@ -49,13 +52,14 @@
         <entry key="app/src/main/res/layout/fragment_athletes.xml" value="0.16143755415420208" />
         <entry key="app/src/main/res/layout/fragment_business_info.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_business_information.xml" value="0.19786324786324785" />
-        <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.1573799443752091" />
+        <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.15112062322495484" />
         <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.23717409587888982" />
         <entry key="app/src/main/res/layout/fragment_community_member2.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_edit_business_info.xml" value="0.2349830029637811" />
         <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.1654059097139358" />
-        <entry key="app/src/main/res/layout/fragment_filter.xml" value="0.6997179838493482" />
+        <entry key="app/src/main/res/layout/fragment_filter.xml" value="0.1784349012815361" />
         <entry key="app/src/main/res/layout/fragment_flow1.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/fragment_flow2.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_flow3.xml" value="0.36187845303867405" />

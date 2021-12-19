@@ -185,7 +185,11 @@
         android:id="@+id/requestFragmentCommunity"
         android:name="com.example.opportunityforall.ui.fragments.community.bottom_nav_fragments.RequestFragmentCommunity"
         android:label="fragment_request_community"
-        tools:layout="@layout/fragment_request_community" />
+        tools:layout="@layout/fragment_request_community" >
+        <action
+            android:id="@+id/action_requestFragmentCommunity_to_proposalFragment"
+            app:destination="@id/proposalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.ProfileFragment"
@@ -269,4 +273,9 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/proposalFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.ProposalFragment"
+        android:label="fragment_proposal"
+        tools:layout="@layout/fragment_proposal" />
 </navigation>

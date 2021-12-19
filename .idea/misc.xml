@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/custom_seekbar.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/custom_thumb_seekbar.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.20843881856540084" />
+        <entry key="app/src/main/res/drawable/ic_edit_user_photo.xml" value="0.20843881856540084" />
         <entry key="app/src/main/res/drawable/ic_flow.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_keyboard_arrow_left.xml" value="0.11324786324786325" />
         <entry key="app/src/main/res/drawable/ic_keyboard_arrow_right.xml" value="0.11324786324786325" />
@@ -41,6 +42,7 @@
         <entry key="app/src/main/res/layout/athletes_recycle_view.xml" value="0.30112868598580195" />
         <entry key="app/src/main/res/layout/chats_recycle_view.xml" value="0.2794702214140998" />
         <entry key="app/src/main/res/layout/choise_buttom_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/community_nav_host_fragment.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/community_requests_recycle_view.xml" value="0.23241910454906176" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23959767223176934" />
         <entry key="app/src/main/res/layout/fragment_athlete1.xml" value="0.1515013642940396" />
@@ -72,8 +74,10 @@
         <entry key="app/src/main/res/layout/fragment_info_athlete.xml" value="0.28192448987848434" />
         <entry key="app/src/main/res/layout/fragment_location.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
+        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.16417053793311906" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1974079156320306" />
+        <entry key="app/src/main/res/layout/fragment_proposal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_request_community.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_requests.xml" value="0.14185366244476535" />
         <entry key="app/src/main/res/layout/fragment_requests_athlete.xml" value="0.19786324786324785" />
@@ -82,6 +86,7 @@
         <entry key="app/src/main/res/layout/requests_recycle_view.xml" value="0.16665172135614018" />
         <entry key="app/src/main/res/layout/row.xml" value="0.13333139411433131" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/menu/com_member_bottom_nav_menu.xml" value="0.19535864978902953" />
       </map>
     </option>
   </component>

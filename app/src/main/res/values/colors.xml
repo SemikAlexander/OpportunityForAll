@@ -27,4 +27,5 @@
     <color name="declined">#E86F85</color>
     <color name="round_background">#3A2D56</color>
     <color name="seekbar">#632CEF</color>
+    <color name="discussion_contract">#EAD191</color>
 </resources>

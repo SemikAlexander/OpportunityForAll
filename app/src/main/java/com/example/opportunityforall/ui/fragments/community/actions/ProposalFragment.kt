@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.databinding.FragmentProposalBinding
 
 class ProposalFragment : Fragment() {
@@ -26,7 +27,12 @@ class ProposalFragment : Fragment() {
         binding.run {
             finalizeContract.setOnClickListener {
                 finalizeContract.visibility = View.GONE
+                editProposal.visibility = View.INVISIBLE
                 waitingForDecision.visibility = View.VISIBLE
+            }
+
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
             }
         }
     }

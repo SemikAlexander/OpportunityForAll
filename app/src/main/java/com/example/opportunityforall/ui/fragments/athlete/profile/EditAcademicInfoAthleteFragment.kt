@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.profile
+package com.example.opportunityforall.ui.fragments.athlete.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R.id.*
-import com.example.opportunityforall.databinding.FragmentEditProfileBinding
-import com.example.opportunityforall.phoneNumberMask
+import com.example.opportunityforall.databinding.FragmentEditAcademicInfoAthleteBinding
 
-class EditProfileFragment : Fragment() {
+class EditAcademicInfoAthleteFragment : Fragment() {
 
-    private var _binding: FragmentEditProfileBinding? = null
+    private var _binding: FragmentEditAcademicInfoAthleteBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentEditProfileBinding.inflate(layoutInflater)
+        _binding = FragmentEditAcademicInfoAthleteBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -27,13 +25,11 @@ class EditProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
-            phoneNumberMask(phoneNumberUser)
-
-            saveChanges.setOnClickListener {
-                findNavController().popBackStack(profileFragment, false)
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
             }
 
-            backButton.setOnClickListener {
+            saveChanges.setOnClickListener {
                 findNavController().popBackStack()
             }
         }

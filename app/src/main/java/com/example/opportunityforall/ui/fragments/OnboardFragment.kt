@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.rounding_active_tab
-import com.example.opportunityforall.adapters.ViewPageAdapter
+import com.example.opportunityforall.ui.adapters.ViewPageAdapter
 import com.example.opportunityforall.databinding.FragmentOnboardBinding
 
 class OnboardFragment : Fragment() {

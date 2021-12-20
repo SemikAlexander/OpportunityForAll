@@ -1,4 +1,4 @@
-//package com.example.opportunityforall.adapters
+//package com.example.opportunityforall.ui.adapters
 //
 //import android.view.LayoutInflater
 //import android.view.ViewGroup

@@ -40,6 +40,7 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.12817028985507245" />
         <entry key="app/src/main/res/layout/athlete_requests_recycle_view.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/athletes_recycle_view.xml" value="0.30112868598580195" />
+        <entry key="app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/chats_recycle_view.xml" value="0.2794702214140998" />
         <entry key="app/src/main/res/layout/choise_buttom_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/community_nav_host_fragment.xml" value="0.19535864978902953" />
@@ -50,25 +51,38 @@
         <entry key="app/src/main/res/layout/fragment_athlete3.xml" value="0.16802536231884058" />
         <entry key="app/src/main/res/layout/fragment_athlete4.xml" value="0.16802536231884058" />
         <entry key="app/src/main/res/layout/fragment_athlete5.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_athlete_academic_sports_info.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_athlete_basic_info.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_athlete_proposal.xml" value="0.19535864978902953" />
+        <entry key="app/src/main/res/layout/fragment_athlete_towns.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_athletes.xml" value="0.16143755415420208" />
         <entry key="app/src/main/res/layout/fragment_business_info.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_business_information.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.15112062322495484" />
         <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_chats_athlete.xml" value="0.1839662447257384" />
         <entry key="app/src/main/res/layout/fragment_community_member1.xml" value="0.23717409587888982" />
         <entry key="app/src/main/res/layout/fragment_community_member2.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_community_member_basic_info.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_community_member_location.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_edit_academic_info_athlete.xml" value="0.19535864978902953" />
+        <entry key="app/src/main/res/layout/fragment_edit_basic_information_athlete.xml" value="0.1839662447257384" />
         <entry key="app/src/main/res/layout/fragment_edit_business_info.xml" value="0.2349830029637811" />
+        <entry key="app/src/main/res/layout/fragment_edit_location_athlete.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.1654059097139358" />
-        <entry key="app/src/main/res/layout/fragment_filter.xml" value="0.1784349012815361" />
+        <entry key="app/src/main/res/layout/fragment_filter.xml" value="0.3239329722957208" />
         <entry key="app/src/main/res/layout/fragment_flow1.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/fragment_flow2.xml" value="0.22708333333333333" />
         <entry key="app/src/main/res/layout/fragment_flow3.xml" value="0.36187845303867405" />
         <entry key="app/src/main/res/layout/fragment_flow4.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_flow5.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_flow6.xml" value="0.23619516825369727" />
+        <entry key="app/src/main/res/layout/fragment_flow_cancellation_policy.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_flow_date_event.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/fragment_flow_fragmen4.xml" value="0.18632478632478633" />
+        <entry key="app/src/main/res/layout/fragment_flow_location_event.xml" value="0.19786324786324785" />
+        <entry key="app/src/main/res/layout/fragment_flow_sponsor.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_get_started.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_hello.xml" value="0.20636406856383122" />
         <entry key="app/src/main/res/layout/fragment_info_athlete.xml" value="0.28192448987848434" />
@@ -77,6 +91,7 @@
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.16417053793311906" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1974079156320306" />
+        <entry key="app/src/main/res/layout/fragment_profile_athlete.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/fragment_proposal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_request_community.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_requests.xml" value="0.14185366244476535" />

@@ -1,10 +1,9 @@
-package com.example.opportunityforall.adapters
+package com.example.opportunityforall.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.opportunityforall.R

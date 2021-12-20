@@ -39,7 +39,7 @@
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/proxima_nova_semibold"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:textColor="#776F82"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +53,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="As a student-athlete"
+        android:text="@string/as_a_student_athlete"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,12 +148,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/proxima_nova_bold"
-            android:text="College Town"
+            android:text="@string/college_town"
             android:textColor="@color/white"
             android:textSize="18sp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cityConstraintLayout"
+            android:id="@+id/city_constraint_layout"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -162,22 +162,38 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-            <Spinner
-                android:id="@+id/collage_city_spinner"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/open_spin_collage_city"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_city"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/city_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/city" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
-                android:id="@+id/open_spin_collage_city"
+                android:id="@+id/open_spin_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
@@ -189,31 +205,47 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/stateConstraintLayout"
+            android:id="@+id/state_constraint_layout"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounding_edit_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cityConstraintLayout">
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-            <Spinner
-                android:id="@+id/collage_state_spinner"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/open_spin_collage_state"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_state"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/state_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/state" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
-                android:id="@+id/open_spin_collage_state"
+                android:id="@+id/open_spin_state"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
@@ -229,13 +261,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/proxima_nova_bold"
-            android:text="Home Town"
+            android:text="@string/home_town"
             android:layout_marginTop="30dp"
             android:textColor="@color/white"
             android:textSize="18sp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/homeCityConstraintLayout"
+            android:id="@+id/home_city_constraint_layout"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -244,19 +276,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-            <Spinner
-                android:id="@+id/home_city_spinner"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/open_spin_home_city"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/home_city_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/city" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/open_spin_home_city"
@@ -280,19 +328,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cityConstraintLayout">
 
-            <Spinner
-                android:id="@+id/home_state_spinner"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/open_spin_home_state"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/home_state_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/state" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/open_spin_home_state"

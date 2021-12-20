@@ -161,22 +161,39 @@
             android:layout_height="66dp"
             android:background="@drawable/rounding_edit_text">
 
-            <Spinner
-                android:id="@+id/time_event_spinner"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="20dp"
-                android:background="@android:color/transparent"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColorHint="@color/text_hint"
+                app:hintTextColor="@color/text_hint"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/open_spin_home_city"
+                app:layout_constraintEnd_toStartOf="@+id/open_spin_start_event"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/compensation_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:hint="@string/rate_per_hour" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <ImageView
-                android:id="@+id/open_spin_home_city"
+                android:id="@+id/open_spin_start_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"

@@ -5,17 +5,25 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.NumberPicker
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.rounding_choice_default
 import com.example.opportunityforall.R.drawable.rounding_edit_text
 import com.example.opportunityforall.databinding.FragmentFilterBinding
+import com.example.opportunityforall.showBottomSheetDialog
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class FilterFragment : Fragment() {
 
     private var _binding: FragmentFilterBinding? = null
     private val binding get() = _binding!!
+
+    private var sport: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,46 +43,23 @@ class FilterFragment : Fragment() {
             }
 
             sportConstraintLayout.setOnClickListener {
-                showSportTypeMenu(true)
-            }
+                val view = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
 
-            done.setOnClickListener {
-                showSportTypeMenu(false)
-            }
+                //Test values!!!
+                showBottomSheetDialog(requireContext(), view, sportEditText, listOf("Basketball", "Bowing", "Cross country", "Fencing", "Field hockey", "Football", "Golf", "Gymnastics", "Ice hockey"))
 
-            clear.setOnClickListener {
-                universityEditText.text.clear()
-                universityEditText.clearFocus()
-
-                showSportTypeMenu(false)
-            }
-
-            applyButton.setOnClickListener {
-                findNavController().popBackStack(R.id.athletesFragment, false)
-            }
-        }
-    }
-
-    @SuppressLint("UseCompatLoadingForDrawables")
-    fun showSportTypeMenu(show: Boolean) {
-        binding.run {
-            when {
-                show -> {
-                    sportConstraintLayout.background =
-                        resources.getDrawable(rounding_choice_default)
-
+                clear.setOnClickListener {
+                    universityEditText.text.clear()
+                    sportEditText.text.clear()
+                    sportEditText.clearFocus()
                     universityEditText.clearFocus()
-                    sportType.visibility = View.VISIBLE
-                    applyLinearLayout.visibility = View.INVISIBLE
                 }
-                else -> {
-                    sportConstraintLayout.background =
-                        resources.getDrawable(rounding_edit_text)
 
-                    sportType.visibility = View.INVISIBLE
-                    applyLinearLayout.visibility = View.VISIBLE
+                applyButton.setOnClickListener {
+                    findNavController().popBackStack(R.id.athletesFragment, false)
                 }
             }
         }
+
     }
 }

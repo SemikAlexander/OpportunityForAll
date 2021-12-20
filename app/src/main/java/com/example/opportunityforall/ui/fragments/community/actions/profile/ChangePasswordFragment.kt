@@ -48,7 +48,7 @@ class ChangePasswordFragment : Fragment() {
             }
 
             saveChanges.setOnClickListener {
-                findNavController().navigate(profileFragment)
+                findNavController().popBackStack()
             }
         }
     }

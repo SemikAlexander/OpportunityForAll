@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:mask="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.community.actions.profile.EditProfileFragment"
+    tools:context=".ui.fragments.athlete.profile.EditAcademicInfoAthleteFragment"
     android:background="@color/background">
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -23,154 +22,40 @@
         android:id="@+id/textView13"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
+        android:layout_marginStart="49dp"
         android:layout_marginTop="21dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="@string/edit_profile"
+        android:text="@string/academic_info"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/back_button"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/constraintLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/photo_user"
-            android:layout_width="174dp"
-            android:layout_height="174dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/photo2"
-            android:layout_gravity="bottom|center|right"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-        <ImageButton
-            android:id="@+id/edit_photo_user"
-            android:layout_width="46dp"
-            android:layout_height="46dp"
-            android:layout_gravity="bottom|right"
-            android:background="@drawable/circle_button_photo"
-            android:src="@drawable/ic_edit_user_photo"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-    </FrameLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:fillViewport="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <LinearLayout
+            android:id="@+id/linearLayout12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                android:textColorHint="@color/text_hint"
-                app:hintTextColor="@color/text_hint">
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/name_user"
-                    android:layout_width="match_parent"
-                    android:layout_height="66dp"
-                    android:background="@drawable/rounding_edit_text"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:hint="@string/name"
-                    android:paddingStart="20dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/text_hint"
-                    android:textSize="16sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                android:textColorHint="@color/text_hint"
-                app:hintTextColor="@color/text_hint">
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/phone_number_user"
-                    android:layout_width="match_parent"
-                    android:layout_height="66dp"
-                    android:background="@drawable/rounding_edit_text"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:hint="@string/phone_number"
-                    android:paddingStart="20dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/text_hint"
-                    android:textSize="16sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                android:textColorHint="@color/text_hint"
-                app:hintTextColor="@color/text_hint">
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/email_user"
-                    android:layout_width="match_parent"
-                    android:layout_height="66dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/rounding_edit_text"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:hint="@string/e_mail"
-                    android:paddingStart="20dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/text_hint"
-                    android:textSize="16sp"
-                    tools:ignore="RtlSymmetry" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:text="@string/location"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/community_member_city_constraint_layout"
+                android:id="@+id/university_constraint_layout"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/rounding_edit_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -183,31 +68,31 @@
                     android:layout_centerVertical="true"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="20dp"
+                    android:textColorHint="@color/text_hint"
                     app:boxStrokeWidth="0dp"
                     app:boxStrokeWidthFocused="0dp"
-                    android:textColorHint="@color/text_hint"
                     app:hintTextColor="@color/text_hint"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/open_spin_home_city"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_university"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <EditText
-                        android:id="@+id/home_city_edit_text"
+                        android:id="@+id/university_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
+                        android:enabled="false"
                         android:fontFamily="@font/proxima_nova_bold"
+                        android:hint="@string/university"
                         android:textColor="@color/white"
                         android:textColorHint="@color/text_hint"
-                        android:textSize="16sp"
-                        android:enabled="false"
-                        android:hint="@string/city" />
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <ImageView
-                    android:id="@+id/open_spin_home_city"
+                    android:id="@+id/open_spin_university"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="30dp"
@@ -219,14 +104,14 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/community_member_state_constraint_layout"
+                android:id="@+id/state_constraint_layout"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounding_edit_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cityConstraintLayout">
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
@@ -235,31 +120,140 @@
                     android:layout_centerVertical="true"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="20dp"
+                    android:textColorHint="@color/text_hint"
                     app:boxStrokeWidth="0dp"
                     app:boxStrokeWidthFocused="0dp"
-                    android:textColorHint="@color/text_hint"
                     app:hintTextColor="@color/text_hint"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/open_spin_home_state"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_academic_year"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <EditText
-                        android:id="@+id/home_state_edit_text"
+                        android:id="@+id/academic_year_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:fontFamily="@font/proxima_nova_bold"
+                        android:hint="@string/academic_year"
                         android:textColor="@color/white"
                         android:textColorHint="@color/text_hint"
-                        android:textSize="16sp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+                    android:id="@+id/open_spin_academic_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/text_hint"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/text_hint">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/major_athlete"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/rounding_edit_text"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="@string/major"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/text_hint"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintTextColor="@color/text_hint">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/minors_athlete"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@drawable/rounding_edit_text"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:hint="@string/minor"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="@string/sports_info"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sport_info_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounding_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="@color/text_hint"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintTextColor="@color/text_hint"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/open_spin_sport"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/sport_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
                         android:enabled="false"
-                        android:hint="@string/state" />
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:hint="@string/sport"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="16sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <ImageView
-                    android:id="@+id/open_spin_home_state"
+                    android:id="@+id/open_spin_sport"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="30dp"
@@ -294,6 +288,7 @@
             android:text="@string/save_changes"
             android:textColor="#333333"
             android:textSize="20sp" />
+
 
     </LinearLayout>
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/onboardFragment">
@@ -16,6 +17,9 @@
         <action
             android:id="@+id/action_loginFragment_to_athletesFragment"
             app:destination="@id/athletesFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_athlete_navigation"
+            app:destination="@id/athlete_navigation" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -278,4 +282,5 @@
         android:name="com.example.opportunityforall.ui.fragments.community.actions.ProposalFragment"
         android:label="fragment_proposal"
         tools:layout="@layout/fragment_proposal" />
+    <include app:graph="@navigation/athlete_navigation" />
 </navigation>

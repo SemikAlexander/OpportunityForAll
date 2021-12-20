@@ -18,4 +18,11 @@
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/proxima_nova_semibold</item>
     </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semibold</item>
+    </style>
+
 </resources>

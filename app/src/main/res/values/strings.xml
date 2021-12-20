@@ -8,6 +8,7 @@
     <string name="back">Back</string>
     <string name="register">Register</string>
     <string name="basic_info">Basic info</string>
+    <string name="basic_information">Basic information</string>
     <string name="academic_info">Academic info</string>
     <string name="sports_info">Sports info</string>
     <string name="as_a_student_athlete">As a student-athlete</string>
@@ -80,4 +81,25 @@
     <string name="cancellation_policyolicy">Cancellation Policy</string>
     <string name="flexible_cancelation_policy">Flexible Cancelation Policy</string>
     <string name="waiting_for_decision">Waiting for decision</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="college">College</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="academic_year">Academic Year In School</string>
+    <string name="major">Major(s):</string>
+    <string name="minor">Minor(s):</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="title_activity_action">ActionActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="college_town">College Town</string>
+    <string name="home_town">Home Town</string>
+    <string name="years_in_business">Years in business</string>
+    <string name="number_of_employees">Number of Employees</string>
 </resources>

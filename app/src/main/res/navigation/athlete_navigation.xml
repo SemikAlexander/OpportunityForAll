@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/athlete_navigation"
+    app:startDestination="@id/requestsFragmentAthlete">
+
+    <fragment
+        android:id="@+id/requestsFragmentAthlete"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.bottom_nav_fragments.RequestsFragmentAthlete"
+        android:label="fragment_requests_athlete"
+        tools:layout="@layout/fragment_requests_athlete" >
+        <action
+            android:id="@+id/action_requestsFragmentAthlete_to_athleteProposalFragment"
+            app:destination="@id/athleteProposalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.bottom_nav_fragments.ChatsAthleteFragment"
+        android:label="fragment_chats_athlete"
+        tools:layout="@layout/fragment_chats_athlete" >
+        <action
+            android:id="@+id/action_chatsAthleteFragment_to_chatFragment2"
+            app:destination="@id/chatFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.bottom_nav_fragments.ProfileAthleteFragment"
+        android:label="fragment_profile_athlete"
+        tools:layout="@layout/fragment_profile_athlete" >
+        <action
+            android:id="@+id/action_profileAthleteFragment_to_editBasicInformationAthleteFragment"
+            app:destination="@id/editBasicInformationAthleteFragment" />
+        <action
+            android:id="@+id/action_profileAthleteFragment_to_editLocationAthleteFragment"
+            app:destination="@id/editLocationAthleteFragment" />
+        <action
+            android:id="@+id/action_profileAthleteFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment2" />
+        <action
+            android:id="@+id/action_profileAthleteFragment_to_changePasswordFragment2"
+            app:destination="@id/changePasswordFragment2" />
+        <action
+            android:id="@+id/action_profileAthleteFragment_to_editAcademicInfoAthleteFragment"
+            app:destination="@id/editAcademicInfoAthleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editBasicInformationAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.profile.EditBasicInformationAthleteFragment"
+        android:label="fragment_edit_basic_information_athlete"
+        tools:layout="@layout/fragment_edit_basic_information_athlete" />
+    <fragment
+        android:id="@+id/editLocationAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.profile.EditLocationAthleteFragment"
+        android:label="fragment_edit_location_athlete"
+        tools:layout="@layout/fragment_edit_location_athlete" />
+    <fragment
+        android:id="@+id/aboutFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/changePasswordFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/editAcademicInfoAthleteFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.profile.EditAcademicInfoAthleteFragment"
+        android:label="fragment_edit_academic_info_athlete"
+        tools:layout="@layout/fragment_edit_academic_info_athlete" />
+    <fragment
+        android:id="@+id/chatFragment2"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/athleteProposalFragment"
+        android:name="com.example.opportunityforall.ui.fragments.athlete.AthleteProposalFragment"
+        android:label="fragment_athlete_proposal"
+        tools:layout="@layout/fragment_athlete_proposal" />
+</navigation>

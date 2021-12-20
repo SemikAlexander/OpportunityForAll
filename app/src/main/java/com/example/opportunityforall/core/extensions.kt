@@ -4,10 +4,10 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.view.View
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import ru.tinkoff.decoro.MaskImpl
 import ru.tinkoff.decoro.parser.UnderscoreDigitSlotsParser
 import ru.tinkoff.decoro.watchers.FormatWatcher
@@ -49,4 +49,50 @@ fun zipCodeMask(editText: EditText) {
             MaskImpl.createTerminated(slots)
         )
     formatWatcher.installOn(editText)
+}
+
+fun showBottomSheetDialog(
+    context: Context,
+    view: View,
+    editText: EditText,
+    data: List<String>
+) {
+    val dialog = BottomSheetDialog(context)
+    var sport = ""
+
+    val btnClose = view.findViewById<TextView>(R.id.done)
+    val btnNext = view.findViewById<ImageView>(R.id.next)
+    val btnPrevious = view.findViewById<ImageView>(R.id.previous)
+
+    val picker = view.findViewById<NumberPicker>(R.id.picker)
+
+    btnClose.setOnClickListener {
+        dialog.dismiss()
+    }
+
+    picker.minValue = 0
+    picker.maxValue = data.size - 1
+    picker.wrapSelectorWheel = false
+    picker.displayedValues = data.toTypedArray()
+
+    picker.setOnValueChangedListener { _, _, newVal ->
+        sport = data[newVal]
+    }
+
+    btnClose.setOnClickListener {
+        editText.setText(sport)
+        dialog.dismiss()
+    }
+
+    btnNext.setOnClickListener {
+
+    }
+
+    btnPrevious.setOnClickListener {
+
+    }
+
+    dialog.setCancelable(false)
+    dialog.setContentView(view)
+    dialog.show()
 }

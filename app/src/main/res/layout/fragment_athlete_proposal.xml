@@ -414,15 +414,16 @@ if Athlete terminates with less than twenty-four (24) hours prior written notice
         android:orientation="vertical"
         android:background="@drawable/rounding_corners"
         android:gravity="center_vertical|center_horizontal"
-
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/athlete_desigion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="visible">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/decline_button"

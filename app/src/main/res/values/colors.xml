@@ -28,4 +28,6 @@
     <color name="round_background">#3A2D56</color>
     <color name="seekbar">#632CEF</color>
     <color name="discussion_contract">#EAD191</color>
+    <color name="divider_color">#8A7FA0</color>
+    <color name="send_message_background">#4D4365</color>
 </resources>

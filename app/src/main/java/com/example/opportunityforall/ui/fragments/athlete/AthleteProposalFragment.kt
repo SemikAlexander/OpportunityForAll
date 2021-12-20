@@ -35,7 +35,8 @@ class AthleteProposalFragment : Fragment() {
             }
 
             acceptButton.setOnClickListener {
-                findNavController().popBackStack(R.id.chatsAthleteFragment, false)
+                waitingForDecision.visibility = View.VISIBLE
+                athleteDesigion.visibility = View.GONE
             }
         }
     }

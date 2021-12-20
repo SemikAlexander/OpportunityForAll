@@ -104,7 +104,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/state_constraint_layout"
+                android:id="@+id/academic_year_constraint_layout"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginTop="20dp"

@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentEditAcademicInfoAthleteBinding
+import com.example.opportunityforall.showBottomSheetDialog
 
 class EditAcademicInfoAthleteFragment : Fragment() {
 
@@ -27,6 +29,13 @@ class EditAcademicInfoAthleteFragment : Fragment() {
         binding.run {
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+            }
+
+            academicYearConstraintLayout.setOnClickListener {
+                val view = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
+
+                //Test values!!!
+                showBottomSheetDialog(requireContext(), view, academicYearEditText, listOf("Freshman", "Sophomore", "Junior", "Senior", "Graduate"))
             }
 
             saveChanges.setOnClickListener {

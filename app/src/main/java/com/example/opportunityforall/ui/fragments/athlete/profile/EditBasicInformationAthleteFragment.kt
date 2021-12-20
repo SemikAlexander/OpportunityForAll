@@ -33,6 +33,8 @@ class EditBasicInformationAthleteFragment : Fragment() {
             saveChanges.setOnClickListener {
                 findNavController().popBackStack(R.id.profileAthleteFragment, false)
             }
+
+
         }
     }
 }

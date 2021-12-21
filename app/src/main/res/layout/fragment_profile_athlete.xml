@@ -104,7 +104,7 @@
                         android:fontFamily="@font/proxima_nova"
                         android:textColor="@color/white"
                         android:textSize="18sp"
-                        android:text="@string/basic_info"/>
+                        android:text="@string/basic_information"/>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -123,7 +123,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/edit_business_info"
+                    android:id="@+id/location_athlete_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
@@ -160,7 +160,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/onboarding"
+                    android:id="@+id/academic_info_athlete"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"
@@ -197,7 +197,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/change_password"
+                    android:id="@+id/change_password_athlete"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="30dp"

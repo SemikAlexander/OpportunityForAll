@@ -23,6 +23,9 @@
     <color name="new_rv">#A8EA91</color>
     <color name="time_text">#958fa9</color>
 
+    <color name="yellow">#FFED18</color>
+    <color name="choice_menu">#C78FFF</color>
+
     <color name="discussion">#EAD191</color>
     <color name="declined">#E86F85</color>
     <color name="round_background">#3A2D56</color>

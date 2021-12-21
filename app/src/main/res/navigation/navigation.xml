@@ -193,6 +193,9 @@
         <action
             android:id="@+id/action_requestFragmentCommunity_to_proposalFragment"
             app:destination="@id/proposalFragment" />
+        <action
+            android:id="@+id/action_requestFragmentCommunity_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -271,6 +274,9 @@
         <action
             android:id="@+id/action_chatsFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_chatsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/chatFragment"

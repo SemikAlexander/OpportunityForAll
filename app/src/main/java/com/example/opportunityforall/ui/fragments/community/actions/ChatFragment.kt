@@ -11,6 +11,7 @@ import com.example.opportunityforall.R.drawable.rounding_choice_default
 import com.example.opportunityforall.R.drawable.rounding_edit_text
 import com.example.opportunityforall.databinding.FragmentChatBinding
 import com.example.opportunityforall.databinding.FragmentFilterBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class ChatFragment : Fragment() {
 
@@ -27,6 +28,8 @@ class ChatFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        MainActivity.isShowBottomBar.postValue(false)
 
         binding.run {
             backButton.setOnClickListener {

@@ -16,6 +16,7 @@ import com.example.opportunityforall.R.drawable.rounding_choice_default
 import com.example.opportunityforall.R.drawable.rounding_edit_text
 import com.example.opportunityforall.databinding.FragmentFilterBinding
 import com.example.opportunityforall.showBottomSheetDialog
+import com.example.opportunityforall.ui.activities.MainActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class FilterFragment : Fragment() {
@@ -36,6 +37,8 @@ class FilterFragment : Fragment() {
     @SuppressLint("UseCompatLoadingForDrawables")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        MainActivity.isShowBottomBar.postValue(false)
 
         binding.run {
             close.setOnClickListener {

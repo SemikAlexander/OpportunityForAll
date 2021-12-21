@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.*
 import com.example.opportunityforall.databinding.FragmentSignUpBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class SignUpFragment : Fragment() {
 
@@ -29,6 +30,8 @@ class SignUpFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        MainActivity.isShowBottomBar.postValue(false)
 
         binding.run {
             studentAthlete.setOnClickListener {

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/order"
-        android:title="@string/orders"
+        android:id="@+id/request_athlete"
+        android:title="@string/requests"
         android:icon="@drawable/ic_order"/>
     <item
-        android:id="@+id/chat"
+        android:id="@+id/chat_athlete"
         android:title="@string/chats"
         android:icon="@drawable/ic_chat"/>
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profile_athlete"
         android:title="@string/profile"
         android:icon="@drawable/ic_user_avatar"/>
+
 </menu>

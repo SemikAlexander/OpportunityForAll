@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentProfileBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class ProfileFragment : Fragment() {
 
@@ -24,6 +25,8 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        MainActivity.isShowBottomBar.postValue(false)
 
         binding.run {
             backButton.setOnClickListener {

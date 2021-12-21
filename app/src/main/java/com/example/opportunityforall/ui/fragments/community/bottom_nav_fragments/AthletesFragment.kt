@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentAthletesBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class AthletesFragment : Fragment() {
 
@@ -25,10 +26,12 @@ class AthletesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        MainActivity.isShowBottomBar.postValue(true)
+        MainActivity.typeBottomBar.postValue("Community member")
+
         binding.run {
             filter.setOnClickListener {
                 findNavController().navigate(R.id.action_athletesFragment_to_filterFragment)
-
                 //findNavController().navigate(R.id.action_athletesFragment_to_infoAthleteFragment) //test!!!
             }
 

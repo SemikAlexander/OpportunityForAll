@@ -239,7 +239,7 @@
         tools:layout="@layout/fragment_change_password" />
     <fragment
         android:id="@+id/businessInformationFragment"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.BusinessInformationFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.add_business.BusinessInformationFragment"
         android:label="fragment_business_information"
         tools:layout="@layout/fragment_business_information" >
         <action
@@ -248,12 +248,12 @@
     </fragment>
     <fragment
         android:id="@+id/businessLocationFragment"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.LocationFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.add_business.LocationFragment"
         android:label="fragment_location"
         tools:layout="@layout/fragment_location_business" />
     <fragment
         android:id="@+id/editBusinessInfoFragment"
-        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.business_info.EditBusinessInfoFragment"
+        android:name="com.example.opportunityforall.ui.fragments.community.actions.profile.add_business.EditBusinessInfoFragment"
         android:label="fragment_edit_business_info"
         tools:layout="@layout/fragment_edit_business_info" />
     <fragment

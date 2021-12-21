@@ -3,6 +3,7 @@ package com.example.opportunityforall
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.view.View
 import android.widget.*
 import androidx.annotation.StringRes
@@ -59,6 +60,7 @@ fun showBottomSheetDialog(
 ) {
     val dialog = BottomSheetDialog(context)
     var sport = ""
+    var currentValue = 0
 
     val btnClose = view.findViewById<TextView>(R.id.done)
     val btnNext = view.findViewById<ImageView>(R.id.next)
@@ -75,6 +77,11 @@ fun showBottomSheetDialog(
     picker.wrapSelectorWheel = false
     picker.displayedValues = data.toTypedArray()
 
+    picker.isEnabled = false
+
+    btnPrevious.isEnabled = false
+    btnPrevious.setImageResource(R.drawable.ic_keyboard_arrow_left_enabled)
+
     picker.setOnValueChangedListener { _, _, newVal ->
         sport = data[newVal]
     }
@@ -85,14 +92,39 @@ fun showBottomSheetDialog(
     }
 
     btnNext.setOnClickListener {
+        currentValue++
+        picker.value = currentValue
+        sport = data[currentValue]
 
+        if (currentValue != picker.maxValue)
+            enableButtons(btnNext, btnPrevious)
+        else {
+            btnNext.isEnabled = false
+            btnNext.setImageResource(R.drawable.ic_keyboard_arrow_left_enabled)
+        }
     }
 
     btnPrevious.setOnClickListener {
+        currentValue--
+        picker.value = currentValue
+        sport = data[currentValue]
 
+        if (currentValue != picker.minValue)
+            enableButtons(btnNext, btnPrevious)
+        else {
+            btnPrevious.isEnabled = false
+            btnPrevious.setImageResource(R.drawable.ic_keyboard_arrow_left_enabled)
+        }
     }
 
     dialog.setCancelable(false)
     dialog.setContentView(view)
     dialog.show()
+}
+
+private fun enableButtons(btnNext: ImageView, btnPrevious: ImageView) {
+    btnNext.isEnabled = true
+    btnNext.setImageResource(R.drawable.ic_keyboard_arrow_left)
+    btnPrevious.isEnabled = true
+    btnPrevious.setImageResource(R.drawable.ic_keyboard_arrow_left)
 }

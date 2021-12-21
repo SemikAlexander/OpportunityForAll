@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.community.actions.profile.business_info
+package com.example.opportunityforall.ui.fragments.community.actions.profile.add_business
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

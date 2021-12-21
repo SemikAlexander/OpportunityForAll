@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R.id.action_loginFragment_to_athlete_navigation
-import com.example.opportunityforall.R.id.action_loginFragment_to_signUpFragment
+import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentLoginBinding
 import com.example.opportunityforall.ui.activities.MainActivity
 
@@ -35,8 +34,8 @@ class LoginFragment : Fragment() {
             }
 
             login.setOnClickListener {
-                //findNavController().navigate(action_loginFragment_to_athletesFragment)
-                findNavController().navigate(action_loginFragment_to_athlete_navigation)
+                findNavController().navigate(action_loginFragment_to_athletesFragment)
+                //findNavController().navigate(action_loginFragment_to_athlete_navigation)
             }
         }
     }

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.opportunityforall.ui.TypeBottomBar.*
 import com.example.opportunityforall.ui.activities.MainActivity
 import com.example.opportunityforall.databinding.FragmentRequestsAthleteBinding
 
@@ -25,7 +26,7 @@ class RequestsFragmentAthlete : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         MainActivity.isShowBottomBar.postValue(true)
-        MainActivity.typeBottomBar.postValue("Student-athlete")
+        MainActivity.typeBottomBar.postValue(ATHLETE)
 
         binding.run {
 

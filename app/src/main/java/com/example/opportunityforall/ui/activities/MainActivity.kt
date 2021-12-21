@@ -5,9 +5,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.findNavController
-import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.R.menu.*
+import com.example.opportunityforall.ui.TypeBottomBar.*
 import com.example.opportunityforall.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         val isShowBottomBar = MutableLiveData(false)
-        val typeBottomBar = MutableLiveData("Community member")
+        val typeBottomBar = MutableLiveData(COMMUNITY)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,12 +31,13 @@ class MainActivity : AppCompatActivity() {
         typeBottomBar.observe({lifecycle}, {
             binding.navView.menu.clear()
             binding.navView.inflateMenu(
-                if (it == "Community member") com_member_bottom_nav_menu else bottom_nav_menu
+                if (it == COMMUNITY) com_member_bottom_nav_menu else bottom_nav_menu
             )
         })
 
         binding.navView.setOnItemSelectedListener {
             when (it.itemId) {
+                /* ------ For Student-Athlete ------ */
                 request_athlete ->
                     findNavController(binding.navHostFragment.id)
                         .navigate(requestsFragmentAthlete)
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
                 profile_athlete ->
                     findNavController(binding.navHostFragment.id)
                         .navigate(profileAthleteFragment)
+
+                /* ------ For Community member ------ */
 
                 athlete ->
                     findNavController(binding.navHostFragment.id)

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
+import com.example.opportunityforall.ui.TypeBottomBar.*
 import com.example.opportunityforall.databinding.FragmentAthletesBinding
 import com.example.opportunityforall.ui.activities.MainActivity
 
@@ -27,7 +28,7 @@ class AthletesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         MainActivity.isShowBottomBar.postValue(true)
-        MainActivity.typeBottomBar.postValue("Community member")
+        MainActivity.typeBottomBar.postValue(COMMUNITY)
 
         binding.run {
             filter.setOnClickListener {

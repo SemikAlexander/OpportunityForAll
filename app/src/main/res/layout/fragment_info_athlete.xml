@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="Sport"
+                android:text="@string/sport"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="Age"
+                android:text="@string/age"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="University"
+                android:text="@string/university"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="Major(s)"
+                android:text="@string/major"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="Year in School"
+                android:text="@string/years_in_business"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
@@ -248,7 +248,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="Minor(s)"
+                android:text="@string/minor"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 

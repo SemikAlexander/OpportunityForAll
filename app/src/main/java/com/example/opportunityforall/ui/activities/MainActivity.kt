@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setOnItemSelectedListener {
             when (it.itemId) {
                 /* ------ For Student-Athlete ------ */
+
                 request_athlete ->
                     findNavController(binding.navHostFragment.id)
                         .navigate(requestsFragmentAthlete)

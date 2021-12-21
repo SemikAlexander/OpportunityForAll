@@ -153,7 +153,7 @@
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Flexible Cancelation Policy"
+                    android:text="@string/flexible_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
 
                 <TextView
@@ -190,7 +190,7 @@
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Medium Cancelation Policy"
+                    android:text="@string/medium_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
 
             </LinearLayout>
@@ -214,7 +214,7 @@
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Strict Cancelation Policy"
+                    android:text="@string/strict_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
 
             </LinearLayout>

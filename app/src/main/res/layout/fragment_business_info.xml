@@ -25,7 +25,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="21dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="Edit Business Info"
+        android:text="@string/edit_business_info"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/back_button"
@@ -59,7 +59,7 @@
             android:textSize="32sp"
             android:textAlignment="center"
             android:fontFamily="@font/proxima_nova_bold"
-            android:text="Business not added"/>
+            android:text="@string/business_not_added"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -69,7 +69,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textAlignment="center"
-            android:text="If you own a business or represent a company, you can add this information."/>
+            android:text="@string/add_business_information"/>
 
     </LinearLayout>
 

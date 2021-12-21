@@ -167,7 +167,7 @@
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:paddingStart="20dp"
-                    android:text="Meet and Greet"
+                    android:text="@string/meet_and_greet"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
@@ -202,7 +202,7 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Autograph Session"
+                    android:text="@string/autograph_session"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
@@ -225,7 +225,7 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Lesson"
+                    android:text="@string/lesson"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
@@ -248,7 +248,7 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Brand Ambassador - Social Media"
+                    android:text="@string/brand_ambassador"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
@@ -271,7 +271,7 @@
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="Brand Ambassador - Traditional Media"
+                    android:text="@string/brand_ambassador_traditional_media"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     tools:ignore="MissingConstraints,RtlSymmetry" />

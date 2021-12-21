@@ -80,6 +80,8 @@
     <string name="sponsor_obligations">Sponsor Obligations</string>
     <string name="cancellation_policyolicy">Cancellation Policy</string>
     <string name="flexible_cancelation_policy">Flexible Cancelation Policy</string>
+    <string name="medium_cancelation_policy">Medium Cancelation Policy</string>
+    <string name="strict_cancelation_policy">Strict Cancelation Policy</string>
     <string name="waiting_for_decision">Waiting for decision</string>
     <string name="change_password">Change Password</string>
     <string name="logout">Logout</string>
@@ -102,4 +104,23 @@
     <string name="home_town">Home Town</string>
     <string name="years_in_business">Years in business</string>
     <string name="number_of_employees">Number of Employees</string>
+    <string name="as_student_athlete">I\'m a student-athlete</string>
+    <string name="as_community_member_supports">I\'m a community member who supports student-athletes</string>
+    <string name="tell_about_yourself">Tell us a little more about yourself.</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Your Password?</string>
+    <string name="create_account">Don\'t have an account?</string>
+    <string name="onboarding">Onboarding</string>
+    <string name="kind_of_business">Tell us what kind of business you represent</string>
+    <string name="photoshoots_and_appear_in_public">The athlete will take part in photoshoots and appear in public, as applicable.</string>
+    <string name="participate_in_promotional">The athlete will pose for and participate in promotional activities in any media, including, but not limited to, photographs, videos, sound recordings, and multi-media (including, for example, website, blog, Twitter, SnapChat, Facebook, Instagram, Tik-Tok, or other social medium, or streaming or television commercials on Sponsor’s behalf).</string>
+    <string name="meet_and_greet">Meet and Greet</string>
+    <string name="autograph_session">Autograph Session</string>
+    <string name="lesson">Lesson</string>
+    <string name="brand_ambassador">Brand Ambassador - Social Media</string>
+    <string name="brand_ambassador_traditional_media">Brand Ambassador - Traditional Media</string>
+    <string name="as_community_member">As Community Member</string>
+    <string name="terms_of_service_and_privacy_policy">By continuing, you agree Terms of Service and Privacy Policy</string>
+    <string name="business_not_added">Business not added</string>
+    <string name="add_business_information">If you own a business or represent a company, you can add this information.</string>
 </resources>

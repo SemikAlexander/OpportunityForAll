@@ -10,11 +10,13 @@
         <entry key="app/src/main/res/drawable/custom_thumb_seekbar.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.20843881856540084" />
         <entry key="app/src/main/res/drawable/ic_edit_user_photo.xml" value="0.20843881856540084" />
+        <entry key="app/src/main/res/drawable/ic_filter.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_flow.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/ic_keyboard_arrow_left.xml" value="0.11324786324786325" />
         <entry key="app/src/main/res/drawable/ic_keyboard_arrow_left_enabled.xml" value="0.11324786324786325" />
         <entry key="app/src/main/res/drawable/ic_keyboard_arrow_right.xml" value="0.11324786324786325" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.2111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.18846153846153846" />
         <entry key="app/src/main/res/drawable/profile_menu.xml" value="0.2111111111111111" />
         <entry key="app/src/main/res/drawable/received_message.xml" value="0.20843881856540084" />
         <entry key="app/src/main/res/drawable/recieved_message.xml" value="0.2111111111111111" />
@@ -100,7 +102,8 @@
         <entry key="app/src/main/res/layout/fragment_location_business.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.11043566362715299" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.16417053793311906" />
-        <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.11043566362715299" />
+        <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_onboarding_welcome.xml" value="0.19786324786324785" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1974079156320306" />
         <entry key="app/src/main/res/layout/fragment_profile_athlete.xml" value="0.19535864978902953" />
         <entry key="app/src/main/res/layout/fragment_proposal.xml" value="0.25" />

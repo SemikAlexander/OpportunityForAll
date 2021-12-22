@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/transparent">
 
+
     <TextView
-        android:id="@+id/title_text"
-        android:layout_width="match_parent"
+        android:id="@+id/text_view_main"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Lorem ipsum dolorsit amet"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/welcome_to_flow"
+        android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="32sp"
-        android:fontFamily="@font/proxima_nova_semibold"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/description_text"
-        android:layout_width="match_parent"
+        android:id="@+id/text_vew_description"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_text"
-        android:layout_marginTop="18dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mattis odio pretium sed a eget scelerisque rhoncus."
-        android:textSize="16sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/proxima_nova_semibold"
+        android:text="@string/idea_app"
         android:textColor="@color/white"
-        android:fontFamily="@font/proxima_nova_bold"
-        tools:ignore="HardcodedText" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_main" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/description_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/deal"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

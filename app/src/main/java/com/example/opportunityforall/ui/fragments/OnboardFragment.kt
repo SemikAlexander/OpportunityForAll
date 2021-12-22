@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.rounding_active_tab
+import com.example.opportunityforall.R.drawable.rounding_default_tab
 import com.example.opportunityforall.ui.adapters.ViewPageAdapter
 import com.example.opportunityforall.databinding.FragmentOnboardBinding
 
@@ -28,6 +29,11 @@ class OnboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            val views = listOf(
+                view1, view2, view3, view4,
+                view5, view6, view7, view8
+            )
+
             viewPager.adapter = ViewPageAdapter(requireContext())
 
             getStartedButton.setOnClickListener {
@@ -39,19 +45,29 @@ class OnboardFragment : Fragment() {
             }
 
             nextButton.setOnClickListener {
-                if (viewPager.currentItem != 1) {
+                if (viewPager.currentItem != 6) {
                     viewPager.currentItem = ++viewPager.currentItem
-                    view2.background =
+
+                    views.forEach {
+                        it.background =
+                            ContextCompat.getDrawable(requireContext(), rounding_default_tab)
+                    }
+
+                    views[viewPager.currentItem].background =
                         ContextCompat.getDrawable(requireContext(), rounding_active_tab)
-                }
-                else {
-                    nextButton.visibility = View.INVISIBLE
-                    skipButton.visibility = View.INVISIBLE
+                } else {
+                    nextButton.visibility = View.GONE
+                    skipButton.visibility = View.GONE
                     getStartedButton.visibility = View.VISIBLE
 
                     viewPager.currentItem = ++viewPager.currentItem
 
-                    view3.background =
+                    views.forEach {
+                        it.background =
+                            ContextCompat.getDrawable(requireContext(), rounding_default_tab)
+                    }
+
+                    views[viewPager.currentItem].background =
                         ContextCompat.getDrawable(requireContext(), rounding_active_tab)
                 }
             }

@@ -123,4 +123,6 @@
     <string name="terms_of_service_and_privacy_policy">By continuing, you agree Terms of Service and Privacy Policy</string>
     <string name="business_not_added">Business not added</string>
     <string name="add_business_information">If you own a business or represent a company, you can add this information.</string>
+    <string name="welcome_to_flow">Welcome to FLOW!</string>
+    <string name="idea_app">This app is designed to help student-athletes earn and sponsors get quality services.</string>
 </resources>

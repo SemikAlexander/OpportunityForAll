@@ -1,9 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-group 'uk.co.placona'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.spring_boot_version = '1.4.3.RELEASE'
+    ext.twilio_version = '6.2.0'
 
     repositories {
         google()
@@ -13,7 +10,6 @@ buildscript {
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0"
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.5'
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
     }
 }
 

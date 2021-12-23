@@ -16,6 +16,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //buildConfigField "String", "ACCESS_TOKEN_SERVICE_URL", "\"$ACCESS_TOKEN_SERVICE_URL\""
     }
 
     buildTypes {
@@ -51,8 +53,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
 
     // Twilio api
-    implementation "org.springframework.boot:spring-boot-starter-web:1.0-SNAPSHOT"
-    implementation group: 'com.twilio.sdk', name: 'twilio', version: '7.9.0'
+    implementation "com.twilio:chat-android-with-symbols:$twilio_version"
 
     //Circle Image view
     implementation 'de.hdodenhof:circleimageview:1.1.0'
@@ -80,6 +81,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:18.0.1'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    //implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }

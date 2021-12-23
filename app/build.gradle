@@ -50,6 +50,10 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.4.0'
 
+    // Twilio api
+    implementation "org.springframework.boot:spring-boot-starter-web:1.0-SNAPSHOT"
+    implementation group: 'com.twilio.sdk', name: 'twilio', version: '7.9.0'
+
     //Circle Image view
     implementation 'de.hdodenhof:circleimageview:1.1.0'
 

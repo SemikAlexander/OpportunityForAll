@@ -32,6 +32,8 @@ class ChatFragment : Fragment() {
         MainActivity.isShowBottomBar.postValue(false)
 
         binding.run {
+            contributorAvatar.setImageResource(requireArguments().getInt("photo"))
+
             backButton.setOnClickListener {
                 findNavController().popBackStack()
             }

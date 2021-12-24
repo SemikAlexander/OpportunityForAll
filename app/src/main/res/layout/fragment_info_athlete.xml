@@ -51,7 +51,7 @@
 
     <TextView
         android:id="@+id/name_athlete"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="105dp"
         android:layout_marginTop="20dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/athlete_card_view" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/city_athlete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
@@ -89,7 +89,7 @@
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14">
+        app:layout_constraintTop_toBottomOf="@+id/city_athlete">
 
         <LinearLayout
             android:id="@+id/linearLayout4"
@@ -140,7 +140,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/year_athlete"
+                android:id="@+id/age_athlete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/proxima_nova_bold"
@@ -229,12 +229,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:fontFamily="@font/proxima_nova_semibold"
-                android:text="@string/years_in_business"
+                android:text="@string/year_in_school"
                 android:textColor="@color/tab_default_color"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/school_athlete"
+                android:id="@+id/years_in_school_athlete"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="49dp"

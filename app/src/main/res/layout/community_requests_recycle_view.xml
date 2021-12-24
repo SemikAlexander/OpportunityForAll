@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
-    android:layout_marginBottom="30dp">
+    android:layout_marginBottom="30dp"
+    android:id="@+id/request_item_view">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -65,6 +66,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/status_image"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_sign_contract"

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.databinding.FragmentProposalBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class ProposalFragment : Fragment() {
 
@@ -25,6 +26,11 @@ class ProposalFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            MainActivity.isShowBottomBar.postValue(false)
+            athleteName.text = arguments?.getString("name")
+
+            athletePhoto.setImageResource(requireArguments().getInt("photo"))
+
             finalizeContract.setOnClickListener {
                 finalizeContract.visibility = View.GONE
                 editProposal.visibility = View.INVISIBLE

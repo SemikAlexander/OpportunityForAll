@@ -16,8 +16,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        //buildConfigField "String", "ACCESS_TOKEN_SERVICE_URL", "\"$ACCESS_TOKEN_SERVICE_URL\""
     }
 
     buildTypes {
@@ -52,9 +50,6 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.4.0'
 
-    // Twilio api
-    implementation "com.twilio:chat-android-with-symbols:$twilio_version"
-
     //Circle Image view
     implementation 'de.hdodenhof:circleimageview:1.1.0'
 
@@ -83,6 +78,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
 
     implementation "androidx.paging:paging-runtime-ktx:3.1.0"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }

@@ -34,6 +34,7 @@ class ProfileAthleteFragment : Fragment() {
                     action_profileAthleteFragment_to_editBasicInformationAthleteFragment
                 )
             }
+
             locationAthleteLayout.setOnClickListener {
                 MainActivity.isShowBottomBar.postValue(false)
 
@@ -54,7 +55,7 @@ class ProfileAthleteFragment : Fragment() {
                 MainActivity.isShowBottomBar.postValue(false)
 
                 findNavController().navigate(
-                    action_profileAthleteFragment_to_changePasswordFragment2
+                    action_profileAthleteFragment_to_changePasswordFragment
                 )
             }
 
@@ -62,7 +63,7 @@ class ProfileAthleteFragment : Fragment() {
                 MainActivity.isShowBottomBar.postValue(false)
 
                 findNavController().navigate(
-                    action_profileAthleteFragment_to_aboutFragment2
+                    action_profileAthleteFragment_to_aboutFragment
                 )
             }
 

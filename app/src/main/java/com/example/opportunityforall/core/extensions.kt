@@ -34,6 +34,16 @@ fun Fragment.toast(message: String, duration: Int = Toast.LENGTH_SHORT) =
 fun Fragment.toast(@StringRes messageId: Int, duration: Int = Toast.LENGTH_SHORT) =
     Toast.makeText(activity, messageId, duration).show()
 
+val academicYearInSchool = listOf(
+    "Freshman", "Sophomore", "Junior", "Senior", "Graduate"
+)
+
+val sportsList = listOf (
+    "Basketball", "Bowing", "Cross country",
+    "Fencing", "Field hockey", "Football", "Golf",
+    "Gymnastics", "Ice hockey"
+)
+
 fun phoneNumberMask(editText: EditText) {
     val slots = UnderscoreDigitSlotsParser().parseSlots("+1 ___ ___ ___")
     val formatWatcher: FormatWatcher =

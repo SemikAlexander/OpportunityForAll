@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentProfileBinding
+import com.example.opportunityforall.ui.TypeBottomBar
 import com.example.opportunityforall.ui.activities.MainActivity
 
 class ProfileFragment : Fragment() {
@@ -30,7 +31,9 @@ class ProfileFragment : Fragment() {
 
         binding.run {
             backButton.setOnClickListener {
-                findNavController().popBackStack()
+                findNavController().popBackStack(athletesFragment, false)
+                MainActivity.isShowBottomBar.postValue(true)
+                MainActivity.typeBottomBar.postValue(TypeBottomBar.COMMUNITY)
             }
 
             editProfile.setOnClickListener {

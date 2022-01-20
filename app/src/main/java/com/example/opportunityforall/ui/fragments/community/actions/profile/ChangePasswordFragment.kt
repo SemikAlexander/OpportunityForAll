@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentChangePasswordBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class ChangePasswordFragment : Fragment() {
 
@@ -33,6 +34,7 @@ class ChangePasswordFragment : Fragment() {
         binding.run {
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             hideCurrentPassword.setOnClickListener {
@@ -49,6 +51,7 @@ class ChangePasswordFragment : Fragment() {
 
             saveChanges.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
         }
     }

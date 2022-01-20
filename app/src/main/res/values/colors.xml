@@ -33,4 +33,9 @@
     <color name="discussion_contract">#EAD191</color>
     <color name="divider_color">#8A7FA0</color>
     <color name="send_message_background">#4D4365</color>
+
+
+    <color name="check_box_active">#642BFF</color>
+    <color name="check_box_unactive">#3A2D56</color>
+    <color name="edit_text_back_color">#0F032B</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.opportunityforall.ui.fragments.athlete
+package com.example.opportunityforall.ui.fragments.athlete.sign_up
 
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
@@ -9,10 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
-import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentAthleteEmailBinding
+import com.example.opportunityforall.toast
 
 class EmailAthleteFragment : Fragment() {
     private var _binding: FragmentAthleteEmailBinding? = null
@@ -31,11 +32,11 @@ class EmailAthleteFragment : Fragment() {
 
         binding.run {
             hidePassword.setOnClickListener {
-                visibleChange(hidePassword, password)
+                visibleChange(hidePassword, passwordTV)
             }
 
             hideConfirmPassword.setOnClickListener {
-                visibleChange(hideConfirmPassword, confirmPassword)
+                visibleChange(hideConfirmPassword, confirmPasswordTV)
             }
 
             cancelAction.setOnClickListener {
@@ -43,7 +44,18 @@ class EmailAthleteFragment : Fragment() {
             }
 
             nextButton.setOnClickListener {
-                findNavController().navigate(action_emailAthleteFragment_to_basicInfoAthleteFragment)
+                if (passwordTV.text.toString() == confirmPasswordTV.text.toString()) {
+
+                    findNavController().navigate(
+                        action_emailAthleteFragment_to_basicInfoAthleteFragment,
+                        bundleOf(
+                            "email" to emailTV.text.toString(),
+                            "password" to passwordTV.text.toString()
+                        )
+                    )
+                } else {
+                    toast("Passwords must match!")
+                }
             }
         }
     }

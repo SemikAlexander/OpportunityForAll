@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.athlete.AcademicSportsAthleteFragment"
+    tools:context=".ui.fragments.athlete.sign_up.AcademicSportsAthleteFragment"
     android:background="@color/background">
 
     <ImageView
@@ -150,7 +150,7 @@
             android:textSize="18sp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cityConstraintLayout"
+            android:id="@+id/universityCL"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -176,7 +176,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
-                    android:id="@+id/university_edit_text"
+                    android:id="@+id/university_ET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -185,7 +185,8 @@
                     android:textColorHint="@color/text_hint"
                     android:textSize="16sp"
                     android:enabled="false"
-                    android:hint="@string/university" />
+                    android:hint="@string/university"
+                    android:text="Alabama A &amp; M University"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -202,7 +203,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/stateConstraintLayout"
+            android:id="@+id/academic_year_in_schoolCL"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -228,7 +229,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
-                    android:id="@+id/academic_year_in_school_edit_text"
+                    android:id="@+id/academic_year_in_school_ET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -264,7 +265,7 @@
             android:textSize="18sp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/homeCityConstraintLayout"
+            android:id="@+id/sportCL"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"
@@ -290,7 +291,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
-                    android:id="@+id/sport_edit_text"
+                    android:id="@+id/sport_ET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"

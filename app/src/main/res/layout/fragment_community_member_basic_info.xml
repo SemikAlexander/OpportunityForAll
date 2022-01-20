@@ -17,16 +17,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/appCompatImageView"
-        android:layout_width="174dp"
-        android:layout_height="174dp"
+    <ImageView
+        android:id="@+id/avatarIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
-        android:background="@drawable/circle_button_photo"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_camera"
+        android:adjustViewBounds="true"
+        android:src="@drawable/photo_select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
@@ -120,7 +119,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView">
+        app:layout_constraintTop_toBottomOf="@+id/avatarIV">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -128,21 +127,22 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/name"
+                android:id="@+id/nameTV"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/rounding_edit_text"
                 android:fontFamily="@font/proxima_nova_bold"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:paddingStart="20dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/text_hint"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/phone_number"
+                android:id="@+id/phone_numberTV"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginStart="24dp"
@@ -158,7 +158,7 @@
                 tools:ignore="RtlSymmetry" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/email"
+                android:id="@+id/emailTV"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
                 android:layout_marginStart="24dp"
@@ -182,7 +182,7 @@
                 android:background="@drawable/rounding_edit_text">
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/passwordTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -222,7 +222,7 @@
                 android:background="@drawable/rounding_edit_text">
 
                 <EditText
-                    android:id="@+id/confirm_password"
+                    android:id="@+id/confirm_passwordTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"

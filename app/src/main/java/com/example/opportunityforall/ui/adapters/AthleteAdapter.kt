@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.opportunityforall.databinding.AthletesRecycleViewBinding
 import com.example.opportunityforall.ui.adapters.classes.Athlete
+import com.google.android.material.shape.CornerFamily
 
 class AthleteAdapter (
     private val values: ArrayList<Athlete>,
@@ -41,6 +42,14 @@ class AthleteAdapter (
             nameAthlete.text = item.nameAthlete
             cityAthlete.text = item.cityAthlete
             sportAthlete.text = item.sportAthlete
+
+            val radius = 50.0f
+            photoAthlete.shapeAppearanceModel = photoAthlete.shapeAppearanceModel
+                .toBuilder()
+                .setTopLeftCorner(CornerFamily.ROUNDED, radius)
+                .setBottomLeftCorner(CornerFamily.ROUNDED, radius)
+                .build();
+
             photoAthlete.setImageResource(item.photoAthlete)
         }
     }

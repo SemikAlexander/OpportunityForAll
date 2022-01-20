@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentEditLocationAthleteBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class EditLocationAthleteFragment : Fragment() {
 
@@ -28,10 +29,12 @@ class EditLocationAthleteFragment : Fragment() {
         binding.run {
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             saveChanges.setOnClickListener {
                 findNavController().popBackStack(R.id.profileAthleteFragment, false)
+                MainActivity.isShowBottomBar.postValue(true)
             }
         }
     }

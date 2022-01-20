@@ -30,12 +30,34 @@ class CancellationPolicyFlowFragment : Fragment() {
                 findNavController().popBackStack()
             }
 
+            val radioButtons = listOf(
+                flexibleCancellationPolicy, mediumCancellationPolicy, strictCancellationPolicy
+            )
+
+            val descriptions = listOf(
+                flexibleCancellationPolicyDescription,
+                mediumCancellationPolicyDescription,
+                strictCancellationPolicyDescription
+            )
+
             cancelAction.setOnClickListener {
                 findNavController().popBackStack(R.id.infoAthleteFragment, false)
             }
 
             nextButton.setOnClickListener {
                 findNavController().navigate(R.id.action_cancellationPolicyFlowFragment_to_requestFragmentCommunity)
+            }
+
+            radioButtons.indices.forEach { i ->
+                radioButtons[i].setOnCheckedChangeListener { _, isChecked ->
+                    if (isChecked) {
+                        radioButtons.forEach { it.isChecked = false }
+                        descriptions.forEach { it.visibility = View.GONE }
+
+                        radioButtons[i].isChecked = true
+                        descriptions[i].visibility = View.VISIBLE
+                    }
+                }
             }
         }
     }

@@ -36,14 +36,15 @@ class RequestsAthleteAdapter (
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: RequestsAthlete) = binding.run {
-            athleteRequestItemView.setOnClickListener { onItemClick.invoke(item) }
+            requestAthleteItemVew.setOnClickListener { onItemClick.invoke(item) }
 
-            typeRequest.text = item.typeRequests
+            imageRequest.setImageResource(item.image)
+            statusRequest.text = item.status
+            dateRequest.text = item.date
+            typeRequest.text = item.type
             name.text = item.name
-            statusRequest.text = item.statusRequest
-            description.text = item.description
-            imageRequest.setImageResource(item.imageRequests)
             photo.setImageResource(item.photo)
+            descriptionRequest.text = item.description
         }
     }
 }

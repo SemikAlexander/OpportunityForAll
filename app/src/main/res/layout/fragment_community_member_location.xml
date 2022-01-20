@@ -151,7 +151,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
-                    android:id="@+id/city_edit_text"
+                    android:id="@+id/city_ET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -160,7 +160,8 @@
                     android:textColorHint="@color/text_hint"
                     android:textSize="16sp"
                     android:enabled="false"
-                    android:hint="@string/city" />
+                    android:hint="@string/city"
+                    android:text="Los Angeles"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -203,7 +204,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
-                    android:id="@+id/state_edit_text"
+                    android:id="@+id/state_ET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -212,7 +213,8 @@
                     android:textColorHint="@color/text_hint"
                     android:textSize="16sp"
                     android:enabled="false"
-                    android:hint="@string/state" />
+                    android:hint="@string/state"
+                    android:text="California"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -241,7 +243,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/skip_button"
+            android:id="@+id/back_button"
             android:layout_width="155dp"
             android:layout_height="66dp"
             android:layout_marginStart="24dp"

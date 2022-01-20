@@ -389,7 +389,7 @@
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:fontFamily="@font/proxima_nova_bold"
-                android:text="@string/flexible_cancelation_policy"/>
+                android:text="@string/flexible_cancellation_policy"/>
 
             <TextView
                 android:layout_width="match_parent"

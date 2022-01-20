@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.getColorStateList
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.id.*
@@ -40,6 +41,14 @@ class SponsorFlowFragment : Fragment() {
                     action_sponsorFlowFragment_to_cancellationPolicyFlowFragment
                 )
             }
+
+            /*allowPromotionalActivities.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    allowPromotionalActivities.buttonDrawable = getColorStateList(requireContext(), R.color.check_box_active)
+                } else {
+                    allowPromotionalActivities.buttonTintList = getColorStateList(requireContext(), R.color.check_box_unactive)
+                }
+            }*/
         }
     }
 }

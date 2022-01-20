@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.*
+import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentSignUpBinding
 import com.example.opportunityforall.ui.activities.MainActivity
 
@@ -50,9 +51,9 @@ class SignUpFragment : Fragment() {
 
             nextButton.setOnClickListener {
                 if (type == "student")
-                    findNavController().navigate(R.id.action_signUpFragment_to_athleteFragment1)
+                    findNavController().navigate(action_signUpFragment_to_athleteFragment1)
                 else
-                    findNavController().navigate(R.id.action_signUpFragment_to_communityMemberFragment1)
+                    findNavController().navigate(action_signUpFragment_to_communityMemberFragment)
             }
         }
     }

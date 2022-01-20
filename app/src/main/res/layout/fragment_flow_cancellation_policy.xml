@@ -121,11 +121,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -133,89 +134,121 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounding_choice_default"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/rounding_choice_default"
                 android:orientation="vertical">
 
-                <RadioButton
-                    android:id="@+id/flexible_cancelation_policy"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/flexible_cancellation_policy"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginTop="24dp"
+                    android:layout_marginBottom="22dp"
+                    android:button="@drawable/rb_selector"
+                    android:paddingStart="20dp"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:text="@string/flexible_cancellation_policy"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="@string/flexible_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/description_flexible_cancelation_policy"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/flexible_cancellation_policy_description"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="16sp"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
                     android:fontFamily="@font/proxima_nova"
-                    android:text="Either party may cancel at any time and for any reason up to twenty-four (24) hours prior to the date of the Event upon at least twenty-four (24) hours written notice to the other Party; provided that if Sponsor terminates with less than twenty-four (24) hours prior written notice Sponsor will pay to Athlete the full compensation due to Athlete under Section 2, and if Athlete terminates with less than twenty-four (24) hours prior written notice, Athlete may receive a negative review from Sponsor."/>
+                    android:text="Either party may cancel at any time and for any reason up to twenty-four (24) hours prior to the date of the Event upon at least twenty-four (24) hours written notice to the other Party; provided that if Sponsor terminates with less than twenty-four (24) hours prior written notice Sponsor will pay to Athlete the full compensation due to Athlete under Section 2, and if Athlete terminates with less than twenty-four (24) hours prior written notice, Athlete may receive a negative review from Sponsor."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounding_choice_default"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounding_choice_default"
+                android:orientation="vertical">
 
-                <RadioButton
-                    android:id="@+id/medium_cancelation_policy"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/medium_cancellation_policy"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="22dp"
+                    android:button="@drawable/rb_selector"
+                    android:paddingStart="20dp"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:text="@string/medium_cancellation_policy"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="@string/medium_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/medium_cancellation_policy_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16sp"
+                    android:fontFamily="@font/proxima_nova"
+                    android:text="Either party may cancel at any time and for any reason up to twenty-four (24) hours prior to the date of the Event upon at least twenty-four (24) hours written notice to the other Party; provided that if Sponsor terminates with less than twenty-four (24) hours prior written notice Sponsor will pay to Athlete the full compensation due to Athlete under Section 2, and if Athlete terminates with less than twenty-four (24) hours prior written notice, Athlete may receive a negative review from Sponsor."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounding_choice_default"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounding_choice_default"
+                android:orientation="vertical">
 
-                <RadioButton
-                    android:id="@+id/strict_cancelation_policy"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/strict_cancellation_policy"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="22dp"
+                    android:button="@drawable/rb_selector"
+                    android:paddingStart="20dp"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:text="@string/strict_cancellation_policy"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:text="@string/strict_cancelation_policy"
                     tools:ignore="MissingConstraints,RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/strict_cancellation_policy_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16sp"
+                    android:fontFamily="@font/proxima_nova"
+                    android:text="Either party may cancel at any time and for any reason up to twenty-four (24) hours prior to the date of the Event upon at least twenty-four (24) hours written notice to the other Party; provided that if Sponsor terminates with less than twenty-four (24) hours prior written notice Sponsor will pay to Athlete the full compensation due to Athlete under Section 2, and if Athlete terminates with less than twenty-four (24) hours prior written notice, Athlete may receive a negative review from Sponsor."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 

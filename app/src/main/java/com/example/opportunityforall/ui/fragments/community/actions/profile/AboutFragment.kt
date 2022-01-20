@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.databinding.FragmentAboutBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class AboutFragment : Fragment() {
     private var _binding: FragmentAboutBinding? = null
@@ -26,6 +27,7 @@ class AboutFragment : Fragment() {
         binding.run {
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
         }
     }

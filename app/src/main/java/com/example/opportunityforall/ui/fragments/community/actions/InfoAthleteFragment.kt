@@ -48,6 +48,7 @@ class InfoAthleteFragment : Fragment() {
 
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
         }
     }

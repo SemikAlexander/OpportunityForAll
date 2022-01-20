@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.athlete.EmailAthleteFragment"
+    tools:context=".ui.fragments.athlete.sign_up.EmailAthleteFragment"
     android:background="@color/background">
 
     <ImageView
@@ -139,14 +139,14 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/email"
+            android:id="@+id/emailTV"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounding_edit_text"
             android:fontFamily="@font/proxima_nova_bold"
-            android:hint="E-mail"
+            android:hint="@string/e_mail"
             android:paddingStart="20dp"
             android:textColor="@color/white"
             android:textColorHint="@color/text_hint"
@@ -162,14 +162,14 @@
             android:background="@drawable/rounding_edit_text">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/passwordTV"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/proxima_nova_bold"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="16sp"
@@ -202,14 +202,14 @@
             android:background="@drawable/rounding_edit_text">
 
             <EditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/confirm_passwordTV"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/proxima_nova_bold"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_password"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="16sp"

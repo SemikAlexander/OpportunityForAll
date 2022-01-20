@@ -30,10 +30,6 @@ class AthletesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        MainActivity.isShowBottomBar.postValue(true)
-        MainActivity.typeBottomBar.postValue(COMMUNITY)
-
-
         binding.run {
             athletesAdapter.adapter = AthleteAdapter(
                 athleteArray,

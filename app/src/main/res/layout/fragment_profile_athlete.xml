@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/photo_user"
+        android:id="@+id/photo_userIV"
         android:layout_width="174dp"
         android:layout_height="174dp"
         android:layout_marginStart="100dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/name_user"
+        android:id="@+id/name_userTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -41,10 +41,10 @@
         android:text="Jakob Torff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photo_user" />
+        app:layout_constraintTop_toBottomOf="@+id/photo_userIV" />
 
     <TextView
-        android:id="@+id/location_user"
+        android:id="@+id/location_userTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -54,7 +54,7 @@
         android:text="Saint Paul, Minnesota"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_user" />
+        app:layout_constraintTop_toBottomOf="@+id/name_userTV" />
 
     <LinearLayout
         android:id="@+id/linearLayout11"
@@ -66,7 +66,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/location_user">
+        app:layout_constraintTop_toBottomOf="@+id/location_userTV">
 
 
         <ScrollView
@@ -110,7 +110,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="right"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -147,7 +148,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="right"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
 
                         <ImageView
                             android:layout_width="wrap_content"

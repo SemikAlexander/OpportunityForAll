@@ -10,8 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.R.drawable.rounding_active_tab
 import com.example.opportunityforall.R.drawable.rounding_default_tab
-import com.example.opportunityforall.ui.adapters.ViewPageAdapter
+import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentOnboardBinding
+import com.example.opportunityforall.ui.adapters.ViewPageAdapter
 
 class OnboardFragment : Fragment() {
     private var _binding: FragmentOnboardBinding? = null
@@ -35,13 +36,14 @@ class OnboardFragment : Fragment() {
             )
 
             viewPager.adapter = ViewPageAdapter(requireContext())
+            viewPager.isUserInputEnabled = false
 
             getStartedButton.setOnClickListener {
-                findNavController().navigate(R.id.action_onboardFragment_to_loginFragment)
+                findNavController().navigate(action_onboardFragment_to_loginFragment)
             }
 
             skipButton.setOnClickListener {
-                findNavController().navigate(R.id.action_onboardFragment_to_loginFragment)
+                findNavController().navigate(action_onboardFragment_to_loginFragment)
             }
 
             nextButton.setOnClickListener {

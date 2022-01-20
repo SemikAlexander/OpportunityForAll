@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">Opportunity For All</string>
-    <string name="skip">SKIP</string>
-    <string name="next">NEXT</string>
-    <string name="sign_up">Sign up</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="back">Back</string>
-    <string name="register">Register</string>
+
     <string name="basic_info">Basic info</string>
     <string name="basic_information">Basic information</string>
     <string name="academic_info">Academic info</string>
@@ -14,16 +10,13 @@
     <string name="as_a_student_athlete">As a student-athlete</string>
     <string name="verification_site">Verification for Our Site</string>
     <string name="verify">In order for you to participate on our site, we need you to provide a few pieces of information so we can verify you.</string>
-    <string name="hint_url">htpps://www...</string>
+    <string name="hint_url">https://www...</string>
     <string name="validate">We need a link to your profile page on your university\'s official athletic department website so we can validate that you\'re on the team.</string>
     <string name="name">Name</string>
     <string name="e_mail">E-mail</string>
     <string name="about">About</string>
-    <string name="search_by_name_hint">Search by name</string>
-    <string name="search_hint">Search</string>
     <string name="cooperation_request">Cooperation request</string>
     <string name="get_started">Get started</string>
-    <string name="cancel">Cancel</string>
     <string name="flow_form">FLOW Contract Form</string>
     <string name="engagement_type">What Type of Engagement is this? *</string>
     <string name="describe">Please describe, in 1,000 characters or fewer, the Event. *</string>
@@ -35,7 +28,6 @@
     <string name="compensation_amount_hour">What is the Compensation Amount in Total $? *</string>
     <string name="sponsors_solution">Will Sponsor make (and pay for) all travel arrangements for Athlete\'s appearance at the Event? *</string>
     <string name="athlete_obligations">What are the Athlete\'s Obligations (check all that apply)?</string>
-    <string name="send">Send</string>
     <string name="cancellation_policy">Please select a cancellation policy to apply to this contract: *</string>
     <string name="orders">Orders</string>
     <string name="chats">Chats</string>
@@ -49,23 +41,50 @@
     <string name="address">Address</string>
     <string name="zipcode">Zipcode</string>
     <string name="add_business_info">Add business info</string>
-    <string name="confirm">Confirm</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="phone_number">Phone Number</string>
     <string name="location">Location</string>
+
+    <!--Action strings-->
     <string name="save_changes">Save changes</string>
     <string name="filter">Filter</string>
     <string name="clear">Clear</string>
     <string name="apply">Apply</string>
-    <string name="university">University</string>
-    <string name="sport">Sport</string>
+    <string name="done">Done</string>
+    <string name="send">Send</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="sign_up">Sign up</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="finalize_contract">Finalize contract</string>
+    <string name="register">Register</string>
+
+    <!--Password strings-->
     <string name="current_password">Current Password</string>
     <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
     <string name="confirm_new_password">Confirm New Password</string>
-    <string name="done">Done</string>
+    <string name="forgot_password">Forgot Your Password?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+
+    <!--Hint strings-->
+    <string name="search_by_name_hint">Search by name</string>
+    <string name="search_hint">Search</string>
+    <string name="university">University</string>
+    <string name="sport">Sport</string>
     <string name="text">Text</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="college">College</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+
     <string name="athletes">Athletes</string>
-    <string name="finalize_contract">Finalize contract</string>
     <string name="proposal">Proposal</string>
     <string name="discussion">Discussion</string>
     <string name="request_for_athlete">Request for student-athlete</string>
@@ -79,18 +98,11 @@
     <string name="total_amount">Total Amount</string>
     <string name="sponsor_obligations">Sponsor Obligations</string>
     <string name="cancellation_policyolicy">Cancellation Policy</string>
-    <string name="flexible_cancelation_policy">Flexible Cancelation Policy</string>
-    <string name="medium_cancelation_policy">Medium Cancelation Policy</string>
-    <string name="strict_cancelation_policy">Strict Cancelation Policy</string>
+    <string name="flexible_cancellation_policy">Flexible Cancellation Policy</string>
+    <string name="medium_cancellation_policy">Medium Cancellation Policy</string>
+    <string name="strict_cancellation_policy">Strict Cancellation Policy</string>
     <string name="waiting_for_decision">Waiting for decision</string>
-    <string name="change_password">Change Password</string>
-    <string name="logout">Logout</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
     <string name="age">Age</string>
-    <string name="college">College</string>
-    <string name="city">City</string>
-    <string name="state">State</string>
     <string name="academic_year">Academic Year In School</string>
     <string name="major">Major(s):</string>
     <string name="minor">Minor(s):</string>
@@ -107,8 +119,6 @@
     <string name="as_student_athlete">I\'m a student-athlete</string>
     <string name="as_community_member_supports">I\'m a community member who supports student-athletes</string>
     <string name="tell_about_yourself">Tell us a little more about yourself.</string>
-    <string name="login">Login</string>
-    <string name="forgot_password">Forgot Your Password?</string>
     <string name="create_account">Don\'t have an account?</string>
     <string name="onboarding">Onboarding</string>
     <string name="kind_of_business">Tell us what kind of business you represent</string>

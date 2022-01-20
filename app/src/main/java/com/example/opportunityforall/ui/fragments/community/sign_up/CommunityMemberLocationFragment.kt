@@ -8,6 +8,18 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R.id.*
 import com.example.opportunityforall.databinding.FragmentCommunityMemberLocationBinding
+import com.example.opportunityforall.services.retrofit.API
+import com.example.opportunityforall.services.retrofit.dataclasses.error.ErrorResponse
+import com.example.opportunityforall.services.retrofit.dataclasses.SignUpCommunity
+import com.example.opportunityforall.toast
+import com.example.opportunityforall.ui.TypeBottomBar.*
+import com.example.opportunityforall.ui.activities.MainActivity
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class CommunityMemberLocationFragment : Fragment() {
 
@@ -30,9 +42,47 @@ class CommunityMemberLocationFragment : Fragment() {
                 findNavController().popBackStack(loginFragment, false)
             }
 
+            backButton.setOnClickListener {
+                findNavController().popBackStack()
+            }
+
             registerButton.setOnClickListener {
-                findNavController()
-                findNavController().popBackStack(loginFragment, false)
+                register(
+                    SignUpCommunity(
+                        name = arguments?.getString("name").toString(),
+                        email = arguments?.getString("email").toString(),
+                        password = arguments?.getString("password").toString(),
+                        phoneNumber = arguments?.getString("phoneNumber").toString(),
+                        city = cityET.text.toString(),
+                        state = stateET.text.toString(),
+                        file = arguments?.getString("uri").toString()
+                    )
+                )
+            }
+        }
+    }
+
+    @DelicateCoroutinesApi
+    private fun register(signUpCommunity: SignUpCommunity) {
+        GlobalScope.launch(Dispatchers.IO) {
+            try {
+                val answer = API.api.memberSignUp(signUpCommunity).execute()
+                GlobalScope.launch (Dispatchers.Main) {
+                    if (answer.body()?.id != null) {
+                        findNavController().navigate(athletesFragment)
+
+                        MainActivity.isShowBottomBar.postValue(true)
+                        MainActivity.typeBottomBar.postValue(COMMUNITY)
+                    } else {
+                        val gson = Gson()
+                        val type = object : TypeToken<ErrorResponse>() {}.type
+                        val errorResponse: ErrorResponse? = gson.fromJson(answer.errorBody()!!.charStream(), type)
+
+                        toast(errorResponse!!.message[0])
+                    }
+                }
+            } catch (e: Exception) {
+                toast(e.message.toString())
             }
         }
     }

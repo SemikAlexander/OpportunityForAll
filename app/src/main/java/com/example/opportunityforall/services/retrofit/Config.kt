@@ -21,7 +21,7 @@ val retrofit: Retrofit by lazy {
 
     //retrofit
     Retrofit.Builder()
-        .baseUrl("https://api.themoviedb.org/3/")   //base url
+        .baseUrl("https://flow.devbeta.org/v1/")   //base url
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()

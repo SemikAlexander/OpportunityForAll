@@ -36,6 +36,7 @@ class ChatFragment : Fragment() {
 
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             contributorAvatar.setOnClickListener {

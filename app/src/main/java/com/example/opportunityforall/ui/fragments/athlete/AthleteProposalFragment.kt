@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.opportunityforall.R
 import com.example.opportunityforall.databinding.FragmentAthleteProposalBinding
+import com.example.opportunityforall.ui.activities.MainActivity
 
 class AthleteProposalFragment : Fragment() {
 
@@ -26,12 +27,16 @@ class AthleteProposalFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.run {
+            MainActivity.isShowBottomBar.postValue(false)
+
             backButton.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             declineButton.setOnClickListener {
                 findNavController().popBackStack(R.id.requestsFragmentAthlete, false)
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             acceptButton.setOnClickListener {

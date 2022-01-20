@@ -12,16 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpportunityForAll" >
         <activity
-            android:name=".ui.activities.ActionActivity"
-            android:exported="false"
-            android:label="@string/title_activity_action" />
-        <activity
-            android:name=".ui.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.LoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.activities.SplashActivity"
             android:exported="true" >
             <intent-filter>

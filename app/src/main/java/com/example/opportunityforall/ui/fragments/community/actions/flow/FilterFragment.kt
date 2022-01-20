@@ -43,13 +43,20 @@ class FilterFragment : Fragment() {
         binding.run {
             close.setOnClickListener {
                 findNavController().popBackStack()
+                MainActivity.isShowBottomBar.postValue(true)
             }
 
             sportConstraintLayout.setOnClickListener {
                 val view = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
 
                 //Test values!!!
-                showBottomSheetDialog(requireContext(), view, sportEditText, listOf("Basketball", "Bowing", "Cross country", "Fencing", "Field hockey", "Football", "Golf", "Gymnastics", "Ice hockey"))
+                showBottomSheetDialog(requireContext(), view, sportEditText,
+                    listOf (
+                        "Basketball", "Bowing", "Cross country",
+                        "Fencing", "Field hockey", "Football", "Golf",
+                        "Gymnastics", "Ice hockey"
+                    )
+                )
 
                 clear.setOnClickListener {
                     universityEditText.text.clear()
@@ -60,6 +67,7 @@ class FilterFragment : Fragment() {
 
                 applyButton.setOnClickListener {
                     findNavController().popBackStack(R.id.athletesFragment, false)
+                    MainActivity.isShowBottomBar.postValue(true)
                 }
             }
         }
